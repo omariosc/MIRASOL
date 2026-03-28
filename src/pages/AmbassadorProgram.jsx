@@ -1,5 +1,6 @@
 import PageHeader from '../components/PageHeader'
 import ScrollReveal from '../components/ScrollReveal'
+import DatesTimeline from '../components/DatesTimeline'
 
 export default function AmbassadorProgram() {
   return (
@@ -19,24 +20,28 @@ export default function AmbassadorProgram() {
       <ScrollReveal className="content-block -alt">
         <div className="content-block__container">
           <div className="focus-cards">
-            <div className="focus-card">
-              <div className="focus-card__number">
+            <div className="focus-card -icon-inline">
+              <div className="focus-card__header">
+                <div className="focus-card__number">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
               </div>
-              <h3>Eligibility Requirements</h3>
-              <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '1.2rem', margin: 0 }}>
+                <h3>Eligibility Requirements</h3>
+              </div>
+              <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '0.2rem', margin: 0 }}>
                 <li>Early career researchers, postdoctoral fellows, graduate students, or residents</li>
                 <li>Attending MICCAI 2026 in Abu Dhabi in person</li>
                 <li>Registered for satellite events</li>
                 <li>Commit to present one poster in person</li>
               </ul>
             </div>
-            <div className="focus-card">
-              <div className="focus-card__number">
+            <div className="focus-card -icon-inline">
+              <div className="focus-card__header">
+                <div className="focus-card__number">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-              <h3>Program Benefits</h3>
-              <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '1.2rem', margin: 0 }}>
+                <h3>Program Benefits</h3>
+              </div>
+              <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '0.2rem', margin: 0 }}>
                 <li>Broaden your knowledge by engaging with diverse research topics</li>
                 <li>Expand your professional network across the MICCAI community</li>
                 <li>Develop science communication and presentation skills</li>
@@ -93,15 +98,12 @@ export default function AmbassadorProgram() {
       <ScrollReveal className="content-block -alt">
         <div className="content-block__container"><div className="text-block">
           <div className="rte"><h2>Key Dates</h2></div>
-          <table className="dates-table">
-            <thead><tr><th>Milestone</th><th>Date</th></tr></thead>
-            <tbody>
-              <tr><td>Call Opens</td><td>TBC</td></tr>
-              <tr><td>Call Closes</td><td>TBC</td></tr>
-              <tr><td>Matching Notification</td><td>TBC</td></tr>
-              <tr><td>Workshop Date</td><td>TBC (October 2026)</td></tr>
-            </tbody>
-          </table>
+          <DatesTimeline items={[
+            { label: 'Call Opens', value: 'TBC' },
+            { label: 'Call Closes', value: 'TBC' },
+            { label: 'Matching Notification', value: 'TBC' },
+            { label: 'Workshop Date', value: 'TBC (October 2026)' },
+          ]} />
         </div></div>
       </ScrollReveal>
 

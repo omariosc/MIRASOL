@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import ScrollReveal from '../components/ScrollReveal'
+import DatesTimeline from '../components/DatesTimeline'
 
 export default function CallForPapers() {
   return (
@@ -14,7 +15,7 @@ export default function CallForPapers() {
             <p>The workshop welcomes conference paper submissions in the following core areas of focus:</p>
           </div>
           <div className="focus-cards" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">1</div>
               <h3>Overcoming Healthcare Barriers in RCS</h3>
               <ul>
@@ -24,7 +25,7 @@ export default function CallForPapers() {
                 <li>Propose low-cost image-guided therapies and computer-integrated interventions</li>
               </ul>
             </div>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">2</div>
               <h3>Methodological Advances in ML</h3>
               <ul>
@@ -35,7 +36,7 @@ export default function CallForPapers() {
                 <li>Focus on AI model bias mitigation and model compression for equity and resource efficiency</li>
               </ul>
             </div>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">3</div>
               <h3>Driving ML Innovations for Improved Care</h3>
               <ul>
@@ -81,15 +82,12 @@ export default function CallForPapers() {
         <div className="content-block__container">
           <div className="text-block">
             <div className="rte"><h2>Important Dates</h2></div>
-            <table className="dates-table">
-              <thead><tr><th>Event</th><th>Date</th></tr></thead>
-              <tbody>
-                <tr><td>Paper Submission Deadline</td><td>TBD</td></tr>
-                <tr><td>Notification of Acceptance</td><td>TBD</td></tr>
-                <tr><td>Camera-Ready Deadline</td><td>TBD</td></tr>
-                <tr><td>Workshop Date</td><td>TBD (October 2026)</td></tr>
-              </tbody>
-            </table>
+            <DatesTimeline items={[
+              { label: 'Paper Submission Deadline', value: 'TBD' },
+              { label: 'Notification of Acceptance', value: 'TBD' },
+              { label: 'Camera-Ready Deadline', value: 'TBD' },
+              { label: 'Workshop Date', value: 'TBD (October 2026)' },
+            ]} />
             <div className="notice"><strong>Note:</strong> All dates are for 2026 and will be announced soon. All deadlines are at 23:59 Anywhere on Earth (AoE).</div>
           </div>
         </div>
@@ -97,11 +95,9 @@ export default function CallForPapers() {
 
       <ScrollReveal className="content-block">
         <div className="content-block__container">
-          <div className="text-block">
+          <div className="text-block -inline">
             <div className="rte"><p>Ready to contribute? Review the submission guidelines and prepare your manuscript.</p></div>
-            <div className="text-block__button">
-              <Link className="action-element -primary" to="/how-to-submit">How to Submit</Link>
-            </div>
+            <Link className="action-element -primary" to="/how-to-submit">How to Submit</Link>
           </div>
         </div>
       </ScrollReveal>

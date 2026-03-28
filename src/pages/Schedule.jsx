@@ -41,9 +41,19 @@ export default function Schedule() {
 
   const checkNow = useCallback(() => {
     const now = new Date()
-    const current = scheduleItems.find(i => i.category !== 'break' && now >= new Date(i.startTime) && now < new Date(i.endTime))
+    const current = scheduleItems.find(i => now >= new Date(i.startTime) && now < new Date(i.endTime))
     setNowItem(current || null)
   }, [])
+
+  function getItemState(item) {
+    const now = new Date()
+    const start = new Date(item.startTime)
+    const end = new Date(item.endTime)
+    if (nowItem?.id === item.id) return 'active'
+    if (now >= end) return 'past'
+    if (now < start) return 'upcoming'
+    return 'upcoming'
+  }
 
   useEffect(() => { checkNow(); const id = setInterval(checkNow, 30000); return () => clearInterval(id) }, [checkNow])
 
@@ -68,7 +78,7 @@ export default function Schedule() {
 
   return (
     <>
-      <PageHeader title="Schedule" breadcrumb="Schedule" />
+      <PageHeader title="Schedule" />
 
       {/* Program at a Glance */}
       <div className="content-block">
@@ -77,14 +87,16 @@ export default function Schedule() {
             <h2>Program-at-a-Glance</h2>
             <p><strong>Joint Topic:</strong> Building Inclusive and Efficient AI Technologies for Medical Imaging in Africa and Other Resource-Constrained Settings.</p>
           </div></div>
-          <div className="gallery-block-grid -large" style={{marginTop:'1rem'}}>
-            <div className="gallery-block-grid__list">
-              <div className="gallery-block-grid__item">
-                <div className="content-block-image" style={{'--borderRadius':'0.75rem','--aspectRatio':1.5}}>
-                  <img src={img('program-schedule.png')} alt="MIRASOL Workshop Program Schedule" className="content-block-image__image" />
-                </div>
-              </div>
-            </div>
+          <div style={{marginTop:'1.25rem'}}>
+            <a
+              href={img('program-schedule.png')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="program-schedule-btn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              View Program Schedule
+            </a>
           </div>
         </div>
       </div>
@@ -157,45 +169,35 @@ export default function Schedule() {
         </div>
       </div>
 
-      {/* Schedule List */}
+      {/* Schedule Timeline */}
       <div className="content-block" id="scheduleContainer">
         <div className="content-block__container" style={{paddingTop:0}}>
           {visibleSections.map(sec => (
             <div key={sec.id} className="schedule-section">
               <h3 className="schedule-section__title">{sec.title}</h3>
-              {filtered.filter(i => i.section === sec.id).map(item => (
-                <div key={item.id} className={`schedule-item${item.category==='break'?' -break':''}${nowItem?.id===item.id?' -happening-now':''}`}>
-                  <div className="schedule-time">{formatTime(item.startTime)} &ndash; {formatTime(item.endTime)}</div>
-                  <div className="schedule-content">
-                    <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
-                    {item.speaker && <p className="presenter">{item.speaker}</p>}
-                    {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
-                  </div>
-                </div>
-              ))}
+              <div className="schedule-timeline">
+                {filtered.filter(i => i.section === sec.id).map(item => {
+                  const state = getItemState(item)
+                  return (
+                    <div key={item.id} className={`schedule-tl-item -${state}${item.category==='break'?' -break':''}`}>
+                      <div className="schedule-tl-dot">
+                        {state === 'active' && <span className="schedule-tl-dot__pulse" />}
+                      </div>
+                      <div className="schedule-tl-card">
+                        <div className="schedule-tl-time">{formatTime(item.startTime)} &ndash; {formatTime(item.endTime)}</div>
+                        <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
+                        {item.speaker && <p className="presenter">{item.speaker}</p>}
+                        {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Event Details */}
-      <div className="event-details">
-        <div className="event-details__container">
-          <div className="event-details__tile">
-            <header className="event-details__tile-header"><h2 className="event-details__tile-header-title">Location</h2></header>
-            <div className="event-details__tile-body"><div className="event-details__tile-section">
-              <p className="event-details__tile-value">ADNEC Centre Abu Dhabi</p>
-              <div className="event-details__tile-value"><p>Abu Dhabi, United Arab Emirates</p><p>Room: TBA</p></div>
-            </div></div>
-          </div>
-          <div className="event-details__tile">
-            <header className="event-details__tile-header"><h2 className="event-details__tile-header-title">Contact us</h2></header>
-            <div className="event-details__tile-body"><div className="event-details__tile-section">
-              <p className="event-details__tile-label">If you have any questions, please contact <a href="mailto:info.camera.mri@gmail.com">info.camera.mri@gmail.com</a></p>
-            </div></div>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
