@@ -2180,21 +2180,9 @@ a.logos-block__item::after {
     height: auto;
   }
 
-  .website-navigation-list.active {
-    display: flex;
-    position: fixed;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.97);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    z-index: 100;
-    overflow-y: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 1.5rem;
+  /* Desktop nav hidden on mobile — overlay handles it instead */
+  .website-navigation-list {
+    display: none !important;
   }
 
   .website-navigation-list__wrapper {
@@ -2251,7 +2239,7 @@ a.logos-block__item::after {
   }
 
   .hero__logo-right img {
-    height: 65px;
+    height: 50px;
   }
 
   .hero__title {
@@ -2312,27 +2300,29 @@ a.logos-block__item::after {
   }
 
   .schedule-toolbar {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.75rem;
   }
 
-  .schedule-search {
-    flex: 1 1 180px;
-    max-width: 100%;
-  }
-
   .schedule-calendar-sync {
-    flex-shrink: 0;
+    order: 1;
+    width: 100%;
     margin-left: 0;
-    width: auto;
   }
 
   .schedule-calendar-btn {
-    width: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .schedule-search {
+    order: 2;
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
   }
 
   .schedule-filters {
-    width: 100%;
     order: 3;
   }
 
@@ -2375,6 +2365,99 @@ a.logos-block__item::after {
   .keywords-section {
     display: none;
   }
+
+  /* 3-col override stacks on mobile */
+  .focus-cards.-three-col {
+    grid-template-columns: 1fr;
+  }
+
+  /* OrganisingCommittee: tighter gap between page title and description */
+  .page-header--committee {
+    padding-bottom: 0.75rem;
+  }
+
+  /* Keynote notice card: much less vertical padding on mobile */
+  .content-block__container--notice {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* show/hide helpers for button relocation */
+  .show-desktop {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== MOBILE NAV OVERLAY ===== */
+/* Hidden on desktop, shown on mobile when .is-open */
+.nav-mobile-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-mobile-overlay {
+    display: none;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 99;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+
+  .nav-mobile-overlay.is-open {
+    display: flex;
+  }
+
+  .nav-mobile-overlay .website-navigation-list__wrapper {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-mobile-overlay .website-navigation-list__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .nav-mobile-overlay .website-navigation-item {
+    height: auto;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .nav-mobile-overlay .website-navigation-item::after {
+    display: none;
+  }
+}
+
+/* show/hide helpers: desktop default */
+.show-desktop {
+  display: inline-flex;
+}
+
+.show-mobile {
+  display: none;
 }
 
 /* ===== KEYWORD PILLS ===== */

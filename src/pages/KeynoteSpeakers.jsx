@@ -8,7 +8,7 @@ export default function KeynoteSpeakers() {
     <>
       <PageHeader title="Keynote Speakers" />
       <ScrollReveal className="content-block">
-        <div className="content-block__container" style={{ paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
+        <div className="content-block__container content-block__container--notice" style={{ paddingTop: '1.75rem', paddingBottom: '1.75rem' }}>
           <div className="notice" style={{ margin: 0 }}><strong>Note:</strong> Keynote speakers for MIRASOL at MICCAI 2026 will be announced soon. Below are our distinguished speakers from the 2025 edition.</div>
         </div>
       </ScrollReveal>

@@ -53,10 +53,11 @@ export default function OrganisingCommittee() {
 
   return (
     <>
-      <header className="page-header">
+      <header className="page-header page-header--committee">
         <div className="page-header__container">
           <h1 className="page-header__title">Organising Committee</h1>
-          <button className="btn-past-committees" onClick={() => setModalOpen(true)}>
+          {/* Desktop: button in header. Mobile: button at page bottom (show-mobile below) */}
+          <button className="btn-past-committees show-desktop" onClick={() => setModalOpen(true)}>
             Past Committees
           </button>
         </div>
@@ -88,6 +89,15 @@ export default function OrganisingCommittee() {
           </div></div></div>
         </ScrollReveal>
       ))}
+
+      {/* Mobile: Past Committees button at bottom of page */}
+      <ScrollReveal className="content-block -alt">
+        <div className="content-block__container" style={{ paddingTop: '1.5rem', paddingBottom: '1.5rem' }}>
+          <button className="btn-past-committees show-mobile" onClick={() => setModalOpen(true)}>
+            Past Committees
+          </button>
+        </div>
+      </ScrollReveal>
 
       <PastCommitteesModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </>
