@@ -11,8 +11,8 @@ export default function AmbassadorProgram() {
       <ScrollReveal className="content-block">
         <div className="content-block__container"><div className="text-block"><div className="rte">
           <h2>Call for MICCAI 2026 Workshop Ambassadors</h2>
-          <p>Every year, authors with accepted papers at MICCAI, particularly from low- and middle-income countries (LMICs), struggle to get funding support and visas to attend the conference. This means that their research contributions are often not presented at the event. The MIRASOL Ambassador Program addresses this critical issue by inviting conference attendees to present work on behalf of authors who are unable to attend.</p>
-          <p>Ambassadors commit to present one poster in person during the assigned paper presentation on behalf of authors unable to attend. This program supports satellite event presentations only.</p>
+          <p>Every year, a number of authors with accepted papers at MICCAI struggle to get funding support and visas to attend the conference and present their work. This disproportionately impacts authors from Low- and Middle-Income Countries (LMICs), putting their work at risk of not being published and shared to advance innovations.</p>
+          <p>This year, we invite the MICCAI community to help us ensure that as many papers from authors around the world are presented at the 2026 conference, despite these travel constraints. We welcome early career researchers, postdoctoral fellows, graduate students and residents to apply to the Ambassadors Program and &ldquo;adopt a lab&rdquo; in need. Ambassadors will be paired with authors of accepted papers who have exhausted their attempts to attend the conference and present the papers on their behalf. This program only supports presentations at satellite events.</p>
         </div></div></div>
       </ScrollReveal>
 
@@ -28,10 +28,10 @@ export default function AmbassadorProgram() {
                 <h3>Eligibility Requirements</h3>
               </div>
               <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '0.2rem', margin: 0 }}>
-                <li>Early career researchers, postdoctoral fellows, graduate students, or residents</li>
+                <li>Open to early career researchers, postdoctoral fellows, graduate students and residents</li>
                 <li>Attending MICCAI 2026 in Abu Dhabi in person</li>
-                <li>Registered for satellite events</li>
-                <li>Commit to present one poster in person</li>
+                <li>Must be registered to attend MICCAI 2026 satellite events</li>
+                <li>Commit to present one poster in person during the assigned paper presentation</li>
               </ul>
             </div>
             <div className="focus-card -icon-inline">
@@ -39,14 +39,14 @@ export default function AmbassadorProgram() {
                 <div className="focus-card__number">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
-                <h3>Program Benefits</h3>
+                <h3>Benefits of Joining</h3>
               </div>
               <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '0.2rem', margin: 0 }}>
-                <li>Broaden your knowledge by engaging with diverse research topics</li>
-                <li>Expand your professional network across the MICCAI community</li>
-                <li>Develop science communication and presentation skills</li>
-                <li>Gain recognition for supporting inclusive research dissemination</li>
-                <li>Support the democratization of medical imaging innovations globally</li>
+                <li>Broaden your scope of the field by learning from other labs</li>
+                <li>Grow your network by making new collaborations and friends from around the world</li>
+                <li>Hone your science communications skills</li>
+                <li>Be recognized in the MICCAI community as an emerging expert in the field</li>
+                <li>Help democratize medical imaging innovations</li>
               </ul>
             </div>
           </div>
@@ -63,32 +63,27 @@ export default function AmbassadorProgram() {
             <div className="timeline__step">
               <div className="timeline__dot">1</div>
               <h3>Apply</h3>
-              <p>Complete the application form expressing your interest and availability to serve as an ambassador.</p>
+              <p>Complete the application using the link below.</p>
             </div>
             <div className="timeline__step">
               <div className="timeline__dot">2</div>
               <h3>Accept Offer &amp; Matching</h3>
-              <p>Receive your program offer and get matched with a research group whose paper you will present.</p>
+              <p>Accept the offer to join the program and be matched with a research group or laboratory facing travel restrictions.</p>
             </div>
             <div className="timeline__step">
               <div className="timeline__dot">3</div>
-              <h3>Meet Your Research Group</h3>
-              <p>Coordinate with the matched research group to understand their work, key findings, and presentation expectations.</p>
+              <h3>Meet Your Matches</h3>
+              <p>Meet with your matches, learn about their MICCAI paper, and review their poster.</p>
             </div>
             <div className="timeline__step">
               <div className="timeline__dot">4</div>
-              <h3>Prepare</h3>
-              <p>Review poster materials and familiarize yourself with the research in preparation for the workshop.</p>
+              <h3>Present at the Workshop</h3>
+              <p>Pick up the poster from the workshop chairs and present it at the workshop.</p>
             </div>
             <div className="timeline__step">
               <div className="timeline__dot">5</div>
-              <h3>Present at the Workshop</h3>
-              <p>Collect the poster from the organizing committee, display it at the designated area, and present it during the assigned session.</p>
-            </div>
-            <div className="timeline__step">
-              <div className="timeline__dot">6</div>
-              <h3>Maintain Collaboration</h3>
-              <p>Continue building your connection with the research group for ongoing collaboration and networking.</p>
+              <h3>Stay Connected</h3>
+              <p>Stay in touch with your matches to share your experience at MICCAI and continue collaboration.</p>
             </div>
           </div>
         </div>

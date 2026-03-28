@@ -12,16 +12,16 @@ export default function NextGenInterchange() {
       <ScrollReveal className="content-block">
         <div className="content-block__container"><div className="text-block"><div className="rte">
           <h2>About NextGen Interchange</h2>
-          <p>The NextGen Interchange Hub connects early-career researchers and dynamic startups with industry leaders at MICCAI. The initiative aims to foster collaboration through showcasing groundbreaking ideas, developing localized solutions, and building partnerships for Low- and Middle-Income Countries (LMICs).</p>
-          <p>Finalists are invited to present live before a panel of industry and academic experts for feedback and networking opportunities.</p>
+          <p>Welcome to the hub for pioneering research and entrepreneurial spirit, dedicated to fostering impactful solutions in Low- and Middle-Income Countries (LMICs). This platform connects early career researchers and dynamic startups with leading industry figures at MICCAI, creating a unique nexus for collaboration and innovation. Discover opportunities to showcase your groundbreaking ideas, develop scalable solutions tailored to local needs, and forge partnerships that translate cutting-edge research into tangible global impact. Join us in shaping a healthier, more equitable future by bringing vital innovations to the communities that need them most.</p>
+          <p>Finalists will be invited to present live in front of a panel of Industry and Academic experts. It&rsquo;s your chance to make meaningful connections, get real-time feedback, and accelerate your idea&rsquo;s journey.</p>
         </div></div></div>
       </ScrollReveal>
 
-      {/* Application Requirements - 2 cards */}
+      {/* How to Apply - 2 cards with full guidelines */}
       <ScrollReveal className="content-block -alt">
         <div className="content-block__container">
           <div className="rte" style={{ marginBottom: '1.5rem' }}>
-            <h2>Application Requirements</h2>
+            <h2>How to Apply</h2>
             <p>Applicants must complete two required submissions:</p>
           </div>
           <div className="focus-cards">
@@ -32,7 +32,7 @@ export default function NextGenInterchange() {
               </div>
                 <h3>Registered Report</h3>
               </div>
-              <p>A concise 4-page document (plus 2-page reference allowance) outlining the technical methodology behind your research or startup solution. Explain your technical approach, innovation, and real-world applicability for LMICs. Focus on clarity, brevity, and a strong emphasis on impact.</p>
+              <p>A concise 4-page document (plus 2-page reference allowance) that clearly explains your technical approach, what makes it innovative, and how it contributes to addressing an important issue in LMICs. We encourage clarity, brevity, and a strong emphasis on real-world applicability.</p>
             </div>
             <div className="focus-card -icon-inline">
               <div className="focus-card__header">
@@ -41,13 +41,13 @@ export default function NextGenInterchange() {
               </div>
                 <h3>3-Minute Pitch (3MP) Video</h3>
               </div>
-              <p>A story-driven video presentation of your idea. Maximum 3 minutes, MP4 format preferred. One static slide permitted (no animation). Submit via Google Drive link through CMT (must be accessible to anyone with the link). Avoid technical jargon and dense visuals.</p>
+              <p>A short pitch video telling the story of your project: the problem you are tackling, why it matters, how your method works, and what contribution you are making. Avoid technical jargon, focus on clarity, and aim to inspire a broad audience. You may include one static slide to support your message, but avoid dense text or complex visuals.</p>
             </div>
           </div>
         </div>
       </ScrollReveal>
 
-      {/* Video Content - 2x2 cards */}
+      {/* What Your Video Must Cover - 2x2 cards */}
       <ScrollReveal className="content-block">
         <div className="content-block__container">
           <div className="rte" style={{ marginBottom: '1.5rem' }}>
@@ -61,7 +61,7 @@ export default function NextGenInterchange() {
               </div>
                 <h3>The Problem</h3>
               </div>
-              <p>Clearly define the challenge you are tackling and establish the context for your work.</p>
+              <p>What is the real-world issue your research is tackling?</p>
             </div>
             <div className="focus-card -icon-inline">
               <div className="focus-card__header">
@@ -70,7 +70,7 @@ export default function NextGenInterchange() {
               </div>
                 <h3>Why It Matters</h3>
               </div>
-              <p>Explain the significance and real-world impact, especially for communities in resource-constrained settings.</p>
+              <p>Why should people care? What&rsquo;s the broader impact?</p>
             </div>
             <div className="focus-card -icon-inline">
               <div className="focus-card__header">
@@ -79,7 +79,7 @@ export default function NextGenInterchange() {
               </div>
                 <h3>Your Approach</h3>
               </div>
-              <p>Describe your methodology and how your solution addresses the problem in a practical, accessible way.</p>
+              <p>Describe your research method briefly and clearly.</p>
             </div>
             <div className="focus-card -icon-inline">
               <div className="focus-card__header">
@@ -88,7 +88,7 @@ export default function NextGenInterchange() {
               </div>
                 <h3>Your Contribution</h3>
               </div>
-              <p>Highlight what is novel about your work and its potential for scalable, lasting impact.</p>
+              <p>What have you learned or built so far? What are the potential outcomes?</p>
             </div>
           </div>
         </div>
@@ -141,16 +141,29 @@ export default function NextGenInterchange() {
         </div>
       </ScrollReveal>
 
-      {/* Evaluation Criteria */}
+      {/* Submission Format & Resources */}
       <ScrollReveal className="content-block">
+        <div className="content-block__container"><div className="text-block"><div className="rte">
+          <h2>Submission Format &amp; Resources</h2>
+          <ul>
+            <li><strong>Registered Report:</strong> Submit your 4-page (2-page reference) report to the MIRASOL Interchange Track via the CMT portal.</li>
+            <li><strong>3MP Video:</strong> Enter the Google Drive link to your 3MP in CMT when you submit your registered report. Make sure the link is accessible to anyone with the link (view permission enabled).</li>
+            <li><strong>Video length:</strong> Maximum 3 minutes</li>
+            <li><strong>File format:</strong> MP4 preferred</li>
+            <li><strong>Slide:</strong> One static slide only (no animation). Keep it simple, legible, and visual &mdash; avoid dense text or complicated figures.</li>
+          </ul>
+          <p>See examples of 3MT presentations: <a href="https://threeminutethesis.uq.edu.au/watch-3mt" target="_blank" rel="noopener">3MT Thesis Presentation</a> | <a href="https://support.microsoft.com/en-us/office/record-a-presentation-2570dff5-f81c-40bc-b404-e04e95d8a8e6" target="_blank" rel="noopener">Tips on recording your presentation in PowerPoint</a></p>
+        </div></div></div>
+      </ScrollReveal>
+
+      {/* Evaluation Criteria */}
+      <ScrollReveal className="content-block -alt">
         <div className="content-block__container"><div className="text-block">
           <div className="rte">
             <h2>Evaluation Criteria</h2>
             <p>All submissions will be evaluated according to the following criteria. <strong style={{color:'var(--theme-primary)'}}>Ideas must address local LMIC needs to pass the Locality requirement.</strong></p>
           </div>
           <div className="eval-criteria">
-
-            {/* Donut chart + legend */}
             <div className="eval-chart-row">
               <div className="eval-donut-wrapper">
                 <div className="eval-donut" />
@@ -183,13 +196,12 @@ export default function NextGenInterchange() {
                 </div>
               </div>
             </div>
-
           </div>
         </div></div>
       </ScrollReveal>
 
       {/* Key Dates */}
-      <ScrollReveal className="content-block -alt">
+      <ScrollReveal className="content-block">
         <div className="content-block__container"><div className="text-block">
           <div className="rte"><h2>Key Dates</h2></div>
           <DatesTimeline items={[
@@ -200,6 +212,14 @@ export default function NextGenInterchange() {
             { label: 'Workshop Proceedings Submission', value: 'TBC' },
           ]} />
         </div></div>
+      </ScrollReveal>
+
+      {/* Jury Recruitment */}
+      <ScrollReveal className="content-block -alt">
+        <div className="content-block__container"><div className="text-block"><div className="rte">
+          <h2>Interchange Jury Recruitment</h2>
+          <p>Are you a researcher, academic, startup founder, or industry leader at the intersection of AI, healthcare, and innovation? Do you value mentorship and supporting the next generation of global innovators? We invite emerging leaders and changemakers like you to join us as Interchange Juries at MIRASOL 2026.</p>
+        </div></div></div>
       </ScrollReveal>
 
       <SubmissionCards />

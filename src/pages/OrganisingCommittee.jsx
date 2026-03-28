@@ -64,7 +64,8 @@ export default function OrganisingCommittee() {
 
       <ScrollReveal className="content-block">
         <div className="content-block__container"><div className="text-block"><div className="rte">
-          <p>The organizing body consists of researchers, clinicians, and trainees who are local practitioners and knowledge brokers with lived experiences of learning, working, and caring for patients in resource constrained settings, in Africa, Asia, and other parts of the world.</p>
+          <p>We are a collaborative team of researchers, clinicians, and trainees who are local practitioners and knowledge brokers with lived experiences of learning, working, and caring for patients in resource constrained settings, in Africa, Asia, and other parts of the world. Through this expert understanding, and our regional and international networks including at MICCAI, we will bring together world-class speakers and attract contributions from all regions of the world.</p>
+          <p>The organizers are long-time and new MICCAI members including trainees from LMICs, spanning diverse institutions in academia and industry, career stages, and gender representation. The <strong>Next-Gen</strong> (trainees) committee members will gain first-hand knowledge, experience, and mentorship in conference organizations to continue running MIRASOL in the future or organize other satellite events at MICCAI.</p>
         </div></div></div>
       </ScrollReveal>
 

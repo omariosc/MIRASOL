@@ -56,9 +56,13 @@ a:focus {
   text-decoration: none;
 }
 
-/* External link icon */
-.schedule-calendar-option[target="_blank"]::after {
-  display: none;
+/* Suppress CSS external-link icon on buttons that use inline SVG */
+.schedule-calendar-option[target="_blank"]::after,
+.program-schedule-btn::after,
+.btn-past-committees::after,
+a.btn-past-committees::after,
+a.program-schedule-btn::after {
+  display: none !important;
 }
 
 a[target="_blank"]::after {
@@ -563,27 +567,57 @@ h1, h2, h3, h4 {
 
 .focus-card.-watermark .focus-card__number {
   position: absolute;
+  right: -1.5rem;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-  height: auto;
-  background: none;
-  color: var(--theme-primary);
-  opacity: 0.07;
-  font-size: 10rem;
+  transform: translateY(-50%);
+  width: calc(10rem - 15px);
+  height: calc(10rem - 15px);
+  background: var(--theme-primary);
+  color: #fff;
+  opacity: 0.12;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5rem - 5px);
   font-weight: 900;
-  border-radius: 0;
   margin: 0;
   pointer-events: none;
   line-height: 1;
+  z-index: 0;
 }
+
 
 .focus-card.-watermark h3,
 .focus-card.-watermark ul,
 .focus-card.-watermark p {
   position: relative;
   z-index: 1;
+}
+
+a.focus-card.-link {
+  background-image: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+a.focus-card.-link::after {
+  display: none;
+}
+
+a.focus-card.-link:hover {
+  background-image: none;
+  border-color: var(--theme-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.focus-card__external {
+  flex-shrink: 0;
+  color: var(--gray-800);
+  margin-left: auto;
 }
 
 .focus-card h3 {
@@ -904,6 +938,7 @@ a.logos-block__item::after {
   width: auto;
   opacity: 0.5;
   transition: opacity 0.2s;
+  border-radius: 0.35rem;
 }
 
 .footer__bottom-logos img:hover {
@@ -1411,22 +1446,11 @@ a.logos-block__item::after {
   background-image: none;
 }
 
-.program-schedule-btn::after {
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .program-schedule-btn:hover {
   background: var(--theme-primary-dark);
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   transform: translateY(-1px);
   color: #fff;
-  background-size: 0 0;
 }
 
 /* ===== SCHEDULE TOOLBAR ===== */

@@ -72,7 +72,13 @@ export default function CallForPapers() {
               </div>
             </div>
             <div className="rte">
-              <p><strong>Travel Grants</strong> &ndash; To provide opportunity for exceptional LMIC researchers from underrepresented regions and global researchers needing support, the sponsorship committee collaborates with MICCAI to supplement conference registration costs, provide travel stipends, and best paper awards.</p>
+              <h3>Travel Grants</h3>
+              <p>To provide an opportunity for exceptional LMICs researchers from under-represented regions to participate in this workshop and contribute their research, we are actively seeking funding to supplement MICCAI registration costs, provide travel stipends and best paper awards. Our sponsorship committee comprising members who have a track record in securing funding to support participation of underrepresented groups at MICCAI will continue this outreach effort to ensure that under-represented groups are able to share and learn from this workshop and other events at MICCAI.</p>
+              <p><strong>How to apply:</strong></p>
+              <ol>
+                <li>Complete the <a href="https://conferences.miccai.org/2026/" target="_blank" rel="noopener">MICCAI Travel Award application</a> on the MICCAI 2026 website.</li>
+                <li>During paper submission, select that you have applied for the travel award.</li>
+              </ol>
             </div>
           </div>
         </div>
@@ -98,6 +104,36 @@ export default function CallForPapers() {
           <div className="text-block -inline">
             <div className="rte"><p>Ready to contribute? Review the submission guidelines and prepare your manuscript.</p></div>
             <Link className="action-element -primary" to="/how-to-submit">How to Submit</Link>
+          </div>
+        </div>
+      </ScrollReveal>
+
+      {/* Past Workshops */}
+      <ScrollReveal className="content-block -alt">
+        <div className="content-block__container">
+          <div className="rte">
+            <h2>Past MIRASOL Workshops</h2>
+            <p>To read papers from previous MIRASOL Workshops, see links to conference proceedings below:</p>
+          </div>
+          <div className="focus-cards">
+            <a href="https://doi.org/10.1007/978-3-031-79103-1" target="_blank" rel="noopener" className="focus-card -icon-inline -link">
+              <div className="focus-card__header">
+                <div className="focus-card__number">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3>Marrakesh, Morocco 2024</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="focus-card__external"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </div>
+            </a>
+            <a href="https://link.springer.com/book/9783032136534" target="_blank" rel="noopener" className="focus-card -icon-inline -link">
+              <div className="focus-card__header">
+                <div className="focus-card__number">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <h3>Daejeon, South Korea 2025</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="focus-card__external"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </div>
+            </a>
           </div>
         </div>
       </ScrollReveal>

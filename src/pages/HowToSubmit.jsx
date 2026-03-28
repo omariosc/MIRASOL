@@ -1,12 +1,23 @@
-import PageHeader from '../components/PageHeader'
 import ScrollReveal from '../components/ScrollReveal'
 import DatesTimeline from '../components/DatesTimeline'
-import SubmissionCards from '../components/SubmissionCards'
 
 export default function HowToSubmit() {
   return (
     <>
-      <PageHeader title="How to Submit" />
+      <header className="page-header">
+        <div className="page-header__container">
+          <h1 className="page-header__title">How to Submit</h1>
+          <a
+            className="btn-past-committees"
+            href="https://cmt3.research.microsoft.com/MIRASOL2026"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Submit via CMT Portal
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{marginLeft:'0.15rem',verticalAlign:'middle',flexShrink:0}}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </header>
 
       {/* Submission Guidelines - 2x2 cards */}
       <ScrollReveal className="content-block">
@@ -58,8 +69,15 @@ export default function HowToSubmit() {
       <ScrollReveal className="content-block -alt">
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
-            <h2>Submission Instructions</h2>
-            <p>Papers must be submitted electronically as PDF files following <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank" rel="noopener">Springer conference proceedings style guidelines</a>. LaTeX and MS Word templates are available.</p>
+            <h2>Templates &amp; Resources</h2>
+            <p>Papers must be submitted electronically as PDF files following the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank" rel="noopener">Springer LNCS conference proceedings guidelines</a>.</p>
+            <ul>
+              <li><a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v8" target="_blank" rel="noopener">LaTeX Template</a></li>
+              <li><a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v3" target="_blank" rel="noopener">MS Word Template</a></li>
+              <li><a href="https://www.springer.com/gp/computer-science/lncs" target="_blank" rel="noopener">LNCS Series Website</a></li>
+              <li><a href="https://drive.google.com/file/d/1M8-vpVuZOuWy-hNUFhOIL99hF7_igIze/view" target="_blank" rel="noopener">Springer Instructions for Authors</a></li>
+              <li><a href="https://drive.google.com/file/d/1jqfDXQLsmj9u5tP2GqTyRfceuSrBqcQv/view" target="_blank" rel="noopener">Springer Code of Conduct for Book Authors</a></li>
+            </ul>
             <div className="notice"><strong>Important:</strong> Modifications to the template are not allowed, and failure to comply with these formatting guidelines will result in the paper&rsquo;s rejection.</div>
           </div></div>
         </div>
@@ -69,12 +87,12 @@ export default function HowToSubmit() {
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Camera-Ready Submission</h2>
-            <p>Authors of accepted papers are required to submit their camera-ready papers addressing reviewer feedback in their papers along with a rebuttal letter, electronically via the submission portal. Authors are given half a page to address reviewer feedback in their manuscript. Camera-ready papers must adhere strictly to the Springer LNCS style guidelines.</p>
+            <p>Authors of accepted papers are required to submit their camera-ready papers addressing reviewer feedback along with a rebuttal letter, electronically via the submission portal. Authors are given half a page to address reviewer feedback in their manuscript.</p>
             <p>Required camera-ready submissions include:</p>
             <ol>
               <li>Final paper (8.5 pages maximum including figures/tables plus 2 pages for references)</li>
               <li>Rebuttal letter addressing reviewer feedback</li>
-              <li>Completed LNCS license to publish form</li>
+              <li>Completed <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19790018/data/SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland" target="_blank" rel="noopener">LNCS License to Publish form</a></li>
             </ol>
           </div></div>
         </div>
@@ -94,8 +112,6 @@ export default function HowToSubmit() {
           </div></div>
         </div>
       </ScrollReveal>
-
-      <SubmissionCards />
     </>
   )
 }

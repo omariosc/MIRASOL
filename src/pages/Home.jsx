@@ -1,34 +1,47 @@
-import { Link } from 'react-router-dom'
-import ScrollReveal from '../components/ScrollReveal'
-import { img } from '../utils'
+import { Link } from "react-router-dom";
+import ScrollReveal from "../components/ScrollReveal";
+import { img } from "../utils";
 
-const keywordsRow1 = ['Machine Learning', 'Medical Imaging', 'Health Equity', 'Low-and-Middle-Income Countries', 'MRI', 'PET']
-const keywordsRow2 = ['CT', 'US', 'EEG', 'ECG', 'X-ray', 'Low-Resource']
+const keywordsRow1 = [
+  "Machine Learning",
+  "Medical Imaging",
+  "Health Equity",
+  "Low-and-Middle-Income Countries",
+  "MRI",
+  "PET",
+];
+const keywordsRow2 = ["CT", "US", "EEG", "ECG", "X-ray", "Low-Resource"];
 
 export default function Home() {
   return (
     <>
       <section className="hero">
         <div className="hero__bg">
-          <img src={img('abudhabi.jpg')} alt="Abu Dhabi skyline" />
+          <img src={img("abudhabi.jpg")} alt="Abu Dhabi skyline" />
         </div>
         <div className="hero__content">
           <div className="hero__logos">
             <div className="hero__logo-left">
-              <img src={img('miccai-2026-primary.png')} alt="MICCAI 2026 - Abu Dhabi, United Arab Emirates" />
+              <img
+                src={img("miccai-2026-primary.png")}
+                alt="MICCAI 2026 - Abu Dhabi, United Arab Emirates"
+              />
             </div>
             <div className="hero__logo-center">
-              <img src={img('sponsor-1.png')} alt="RISE MICCAI" />
+              <img src={img("sponsor-1.png")} alt="RISE MICCAI" />
             </div>
             <div className="hero__logo-right">
-              <img src={img('logo-mirasol.png')} alt="MIRASOL Workshop" />
+              <img src={img("logo-mirasol.png")} alt="MIRASOL Workshop" />
             </div>
           </div>
           <div className="hero__text">
             <h1 className="hero__title">
-              Building Inclusive and Efficient AI Technologies for Medical Imaging in Africa and Other Resource-Constrained Settings
+              Building Inclusive and Efficient AI Technologies for Medical
+              Imaging in Africa and Other Resource-Constrained Settings
             </h1>
-            <p className="hero__date">Date: TBC &mdash; ADNEC Centre Abu Dhabi, UAE</p>
+            <p className="hero__date">
+              Date: TBC &mdash; ADNEC Centre Abu Dhabi, UAE
+            </p>
           </div>
         </div>
       </section>
@@ -37,13 +50,17 @@ export default function Home() {
       <div className="keywords-section">
         <div className="content-block__container">
           <div className="keywords-row">
-            {keywordsRow1.map(kw => (
-              <span key={kw} className="keyword-pill">{kw}</span>
+            {keywordsRow1.map((kw) => (
+              <span key={kw} className="keyword-pill">
+                {kw}
+              </span>
             ))}
           </div>
           <div className="keywords-row">
-            {keywordsRow2.map(kw => (
-              <span key={kw} className="keyword-pill">{kw}</span>
+            {keywordsRow2.map((kw) => (
+              <span key={kw} className="keyword-pill">
+                {kw}
+              </span>
             ))}
           </div>
         </div>
@@ -54,14 +71,38 @@ export default function Home() {
         <div className="content-block__container">
           <div className="-large -image-right -align-center text-image-block">
             <div className="text-image-block__image-wrapper">
-              <div className="content-block-image" style={{ '--aspect-ratio': 1.5 }}>
-                <img src={img('welcome-graphic.png')} alt="" className="content-block-image__image" />
+              <div
+                className="content-block-image"
+                style={{ "--aspect-ratio": 1.5 }}
+              >
+                <img
+                  src={img("welcome-graphic.png")}
+                  alt=""
+                  className="content-block-image__image"
+                />
               </div>
             </div>
             <div className="text-image-block__text-wrapper">
               <div className="rte">
                 <h2>Welcome</h2>
-                <p>Over recent years, there has been considerable excitement about the extraordinary opportunities that machine learning (ML) may offer in the healthcare of tomorrow. Given the potential of ML technology in facilitating the quantification of large and complex datasets, medical imaging has witnessed rapid and revolutionary developments. However, a limitation of current ML developments for medical imaging is that they have overwhelmingly and almost entirely targeted imaging applications in resource-rich settings. Hence, it is important to promote and accelerate the development of trustworthy and accessible ML solutions for medical imaging in resource-constrained settings (RCS), particularly, low-to-middle-income countries (LMICs) to advance global healthcare.</p>
+                <p>
+                  There has been considerable excitement about the extraordinary
+                  opportunities that machine learning (ML) may offer in the
+                  healthcare of tomorrow. Given the potential of ML technology
+                  in facilitating the quantification of large and complex
+                  datasets, medical imaging has witnessed rapid and
+                  revolutionary developments. However, a limitation of current
+                  ML developments for medical imaging is that they have
+                  overwhelmingly and almost entirely targeted imaging
+                  applications in rich-resourced and high-income settings. Given
+                  the higher level of disease mortalities in low-
+                  and-middle-income countries (LMICs) and the growing incidence
+                  of the leading causes of premature death in these regions, it
+                  is important to promote and accelerate the development of
+                  trustworthy and accessible ML solutions for medical imaging in
+                  resource constrained settings (RCS), particularly in LMICs, to
+                  advance global healthcare.
+                </p>
               </div>
             </div>
           </div>
@@ -74,8 +115,62 @@ export default function Home() {
           <div className="text-block">
             <div className="rte">
               <h3>Aim:</h3>
-              <p>This workshop aims to connect researchers, medical experts, policymakers, regulators, and industry partners from around the world who are working on translational ML solutions for real-world medical imaging in resource-constrained settings (RCS). This workshop builds on the successful <a href="https://event.fourwaves.com/miccaiafrica" target="_blank" rel="noopener"><strong><em>MICCAI Meets Africa Workshop</em></strong></a>, organized in 2024 for the Morocco meeting. While the 2024 workshop focused on ML solutions for Africa-specific healthcare challenges, this year&rsquo;s workshop will broaden the scope to medical imaging challenges in countries and clinical practices with limited infrastructure, personnel, and funding resources.</p>
-              <p>Research and ML methods on optimization of imaging systems (e.g., accelerated imaging, low-resolution image enhancement, denoising, missing sequences), improvement in human resources (e.g., rapid diagnosis, reporting), and policy efforts for translation of ML from concept to clinic in RCS will be highlighted. The workshop will foster ML imaging innovations that address the general challenge of fewer datasets in RCS and inspire the wider MICCAI community to develop methods in a sustainability conscious and cost-effective manner (do more with little).</p>
+              <p>
+                This workshop aims to connect researchers, medical experts,
+                policy makers, regulators, and industry partners from around the
+                world who are working on translational ML solutions for
+                real-world medical imaging in RCS, with a focus on
+                underrepresented communities in the Middle East. This workshop
+                builds on the successful{" "}
+                <a
+                  href="https://event.fourwaves.com/miccaiafrica"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <strong>
+                    <em>MICCAI Meets Africa Workshop</em>
+                  </strong>
+                </a>
+                , organized in 2024 for the Morocco meeting and expanded as a{" "}
+                <a
+                  href="https://event.fourwaves.com/mirasol"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <strong>
+                    <em>MIRASOL Workshop</em>
+                  </strong>
+                </a>{" "}
+                in 2025 for the South Korea meeting. The 2026 Workshop, partners
+                with{" "}
+                <a
+                  href="https://rise-miccai.org/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <strong>
+                    <em>RISE-MICCAI</em>
+                  </strong>
+                </a>
+                , a vibrant community of 1,400 LMIC members (40% women, and 90%
+                from diverse ethnic backgrounds), who up till now had no
+                dedicated workshop tailored to their needs. This year&rsquo;s
+                workshop will fill this gap, as well as continue to probe
+                medical imaging challenges in RCS, including but not limited to,
+                infrastructure, personnel, and funding resources.
+              </p>
+              <p>
+                Research and ML methods on optimization of imaging systems
+                (e.g., accelerated imaging, low-resolution image enhancement,
+                denoising, missing sequences), improvement in human resources
+                (e.g., rapid diagnosis, reporting), and policy efforts for
+                translation of ML from concept to clinic in RCS will be
+                highlighted. The workshop will foster ML imaging innovations
+                that address the general challenge of fewer datasets in RCS and
+                inspire the wider MICCAI community to develop methods in a
+                sustainability conscious, resource-efficient, and cost-effective
+                manner (do more with little).
+              </p>
             </div>
           </div>
         </div>
@@ -84,34 +179,55 @@ export default function Home() {
       {/* Focus Areas */}
       <ScrollReveal className="content-block">
         <div className="content-block__container">
-          <div className="rte" style={{ marginBottom: '1.5rem' }}>
+          <div className="rte" style={{ marginBottom: "1.5rem" }}>
             <h2>Workshop Focus Areas</h2>
-            <p>We are looking for long and short papers that will be presented as contributed talks. Specifically, we encourage contributions that highlight issues related to:</p>
+            <p>
+              We are looking for long and short papers that will be presented as
+              contributed talks. Specifically, we encourage contributions that
+              highlight issues related to:
+            </p>
           </div>
           <div className="focus-cards">
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">1</div>
               <h3>Machine Learning for Medical Imaging</h3>
-              <p>Theoretical and practical advances in machine learning algorithms and methods for medical imaging tailored for monitoring disease progression in settings with data scarcity, imbalanced representations, and limited computational resources.</p>
+              <p>
+                Theoretical and practical advances in machine learning
+                algorithms and methods for medical imaging tailored for
+                monitoring disease progression in settings with data scarcity,
+                imbalanced representations, and limited computational resources.
+              </p>
             </div>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">2</div>
               <h3>Clinical Outcome Prediction</h3>
-              <p>Clinical outcome prediction and forecasting methods in multimodal healthcare data.</p>
+              <p>
+                Clinical outcome prediction and forecasting methods in
+                multimodal healthcare data.
+              </p>
             </div>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">3</div>
               <h3>Societal &amp; Policy Impact</h3>
-              <p>Societal and policy impacts of healthcare ML solutions in the global South focused on insights obtained via pilot studies, qualitative research, and human-in-the-loop settings.</p>
+              <p>
+                Societal and policy impacts of healthcare ML solutions in the
+                global South focused on insights obtained via pilot studies,
+                qualitative research, and human-in-the-loop settings.
+              </p>
             </div>
-            <div className="focus-card">
+            <div className="focus-card -watermark">
               <div className="focus-card__number">4</div>
               <h3>Capacity Building</h3>
-              <p>Approaches to build and rapidly scale capacity for ML innovations in health in RCS, particularly in LMICs.</p>
+              <p>
+                Approaches to build and rapidly scale capacity for ML
+                innovations in health in RCS, particularly in LMICs.
+              </p>
             </div>
           </div>
-          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-            <Link className="action-element -primary" to="/call-for-papers">See Call for Papers</Link>
+          <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+            <Link className="action-element -primary" to="/call-for-papers">
+              See Call for Papers
+            </Link>
           </div>
         </div>
       </ScrollReveal>
@@ -121,26 +237,75 @@ export default function Home() {
         <div className="content-block__container">
           <div className="info-cards">
             <div className="info-card">
-              <svg className="info-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+              <svg
+                className="info-card__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
               <h2>Important Dates</h2>
-              <p><strong>Full Paper Submission Deadline:</strong> TBC</p>
-              <p><strong>Notification of Acceptance:</strong> TBC</p>
-              <p><strong>Camera-ready Submission:</strong> TBC</p>
-              <p><strong>Workshop Date:</strong> TBC (October 2026)</p>
-              <p><strong>Proceedings Submission:</strong> TBC</p>
+              <p>
+                <strong>Full Paper Submission Deadline:</strong> TBC
+              </p>
+              <p>
+                <strong>Notification of Acceptance:</strong> TBC
+              </p>
+              <p>
+                <strong>Camera-ready Submission:</strong> TBC
+              </p>
+              <p>
+                <strong>Workshop Date:</strong> TBC (October 2026)
+              </p>
+              <p>
+                <strong>Proceedings Submission:</strong> TBC
+              </p>
             </div>
             <div className="info-card">
-              <svg className="info-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                className="info-card__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
                 <circle cx="8.5" cy="7" r="4" />
-                <line x1="20" y1="8" x2="20" y2="14" /><line x1="23" y1="11" x2="17" y2="11" />
+                <line x1="20" y1="8" x2="20" y2="14" />
+                <line x1="23" y1="11" x2="17" y2="11" />
               </svg>
               <h2>Registration</h2>
-              <p>All registered attendees of the MICCAI 2026 Conference are welcome to participate in this workshop.</p>
-              <p>Please note that this workshop is a satellite event and an <strong>additional registration fee</strong> is required to attend MICCAI satellite events, including this workshop.</p>
-              <p>Registration details will be announced on the <a href="https://conferences.miccai.org/2026/" target="_blank" rel="noopener">MICCAI 2026 website</a>.</p>
+              <p>
+                All registered attendees of the MICCAI 2026 Conference are
+                welcome to participate in this workshop.
+              </p>
+              <p>
+                Please note that this workshop is a satellite event and an{" "}
+                <strong>additional registration fee</strong> is required to
+                attend MICCAI satellite events, including this workshop.
+              </p>
+              <p>
+                Registration details will be announced on the{" "}
+                <a
+                  href="https://conferences.miccai.org/2026/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  MICCAI 2026 website
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>
@@ -152,8 +317,24 @@ export default function Home() {
           <div className="text-block">
             <div className="rte">
               <h2>Organizing Committee</h2>
-              <p>We are a collaborative team of individuals from diverse institutions in academia and industry from around the world, as well as different career stages and gender representation. The organizers are long time and new MICCAI members including trainees from LMICs. The <strong>Next-Gen</strong> (trainees) committee members will gain first-hand knowledge, experience, and mentorship in conference organizations to continue running MIRASOL in the future or organize other satellite events at MICCAI.</p>
-              <p>See our <Link to="/organising-committee"><strong>Organizing Committee</strong></Link> page to learn more about us.</p>
+              <p>
+                We are a collaborative team of individuals from diverse
+                institutions in academia and industry from around the world, as
+                well as different career stages and gender representation. The
+                organizers are long time and new MICCAI members including
+                trainees from LMICs. The <strong>Next-Gen</strong> (trainees)
+                committee members will gain first-hand knowledge, experience,
+                and mentorship in conference organizations to continue running
+                MIRASOL in the future or organize other satellite events at
+                MICCAI.
+              </p>
+              <p>
+                See our{" "}
+                <Link to="/organising-committee">
+                  <strong>Organizing Committee</strong>
+                </Link>{" "}
+                page to learn more about us.
+              </p>
             </div>
           </div>
         </div>
@@ -165,8 +346,15 @@ export default function Home() {
           <div className="gallery-block-grid -medium">
             <div className="gallery-block-grid__list">
               <div className="gallery-block-grid__item">
-                <div className="content-block-image" style={{ '--aspect-ratio': 2.8 }}>
-                  <img src={img('divider-sponsors.png')} alt="MICCAI workshop attendees" className="content-block-image__image" />
+                <div
+                  className="content-block-image"
+                  style={{ "--aspect-ratio": 2.8 }}
+                >
+                  <img
+                    src={img("divider-sponsors.png")}
+                    alt="MICCAI workshop attendees"
+                    className="content-block-image__image"
+                  />
                 </div>
               </div>
             </div>
@@ -179,25 +367,53 @@ export default function Home() {
         <div className="content-block__container">
           <h2>Sponsors &amp; Partners</h2>
           <div className="logos-block__list">
-            <a href="https://www.cameramriafrica.org/" target="_blank" rel="noopener noreferrer" className="logos-block__item">
-              <img src={img('logo-camera.png')} alt="CAMERA" />
+            <a
+              href="https://www.cameramriafrica.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logos-block__item"
+            >
+              <img src={img("logo-camera.png")} alt="CAMERA" />
             </a>
-            <a href="https://miccai.org/" target="_blank" rel="noopener noreferrer" className="logos-block__item">
-              <img src={img('logo-miccai.png')} alt="MICCAI Society" />
+            <a
+              href="https://miccai.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logos-block__item"
+            >
+              <img src={img("logo-miccai.png")} alt="MICCAI Society" />
             </a>
-            <a href="https://rise-miccai.org/" target="_blank" rel="noopener noreferrer" className="logos-block__item">
-              <img src={img('sponsor-1.png')} alt="RISE MICCAI" />
+            <a
+              href="https://rise-miccai.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logos-block__item"
+            >
+              <img src={img("sponsor-1.png")} alt="RISE MICCAI" />
             </a>
-            <a href="https://africai.org/" target="_blank" rel="noopener noreferrer" className="logos-block__item">
-              <img src={img('sponsor-2.jpeg')} alt="AFRICAI" />
+            <a
+              href="https://africai.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logos-block__item"
+            >
+              <img src={img("sponsor-2.jpeg")} alt="AFRICAI" />
             </a>
-            <div className="logos-block__item"><img src={img('sponsor-3.png')} alt="Fondation Pierre Fabre" /></div>
-            <div className="logos-block__item"><img src={img('sponsor-4.png')} alt="ISR" /></div>
-            <div className="logos-block__item"><img src={img('sponsor-5.png')} alt="Universita di Catania" /></div>
-            <div className="logos-block__item"><img src={img('sponsor-6.png')} alt="Frontiers" /></div>
+            <div className="logos-block__item">
+              <img src={img("sponsor-3.png")} alt="Fondation Pierre Fabre" />
+            </div>
+            <div className="logos-block__item">
+              <img src={img("sponsor-4.png")} alt="ISR" />
+            </div>
+            <div className="logos-block__item">
+              <img src={img("sponsor-5.png")} alt="Universita di Catania" />
+            </div>
+            <div className="logos-block__item">
+              <img src={img("sponsor-6.png")} alt="Frontiers" />
+            </div>
           </div>
         </div>
       </ScrollReveal>
     </>
-  )
+  );
 }

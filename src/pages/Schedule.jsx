@@ -80,7 +80,7 @@ export default function Schedule() {
     <>
       <PageHeader title="Schedule" />
 
-      {/* Program at a Glance */}
+      {/* Program at a Glance - commented out for now
       <div className="content-block">
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
@@ -100,6 +100,7 @@ export default function Schedule() {
           </div>
         </div>
       </div>
+      */}
 
       {/* Schedule Intro */}
       <div className="content-block">
@@ -133,14 +134,17 @@ export default function Schedule() {
               {calOpen && (
                 <div className="schedule-calendar-dropdown">
                   <a href="#" className="schedule-calendar-option" onClick={downloadICS}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download .ics file
                     <span className="schedule-calendar-hint">Apple Calendar, Outlook desktop</span>
                   </a>
                   <a href="#" className="schedule-calendar-option" onClick={openGoogle}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     Google Calendar
                     <span className="schedule-calendar-hint">Opens in Google Calendar</span>
                   </a>
                   <a href="#" className="schedule-calendar-option" onClick={openOutlook}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     Outlook Web
                     <span className="schedule-calendar-hint">Opens in Outlook.com</span>
                   </a>
