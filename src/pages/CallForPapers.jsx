@@ -14,7 +14,7 @@ export default function CallForPapers() {
             <h2>Workshop Core Focus Areas</h2>
             <p>The workshop welcomes conference paper submissions in the following core areas of focus:</p>
           </div>
-          <div className="focus-cards" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+          <div className="focus-cards -three-col">
             <div className="focus-card -watermark">
               <div className="focus-card__number">1</div>
               <h3>Overcoming Healthcare Barriers in RCS</h3>

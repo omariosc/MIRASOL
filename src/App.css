@@ -512,6 +512,10 @@ h1, h2, h3, h4 {
   margin: 1.5rem 0;
 }
 
+.focus-cards.-three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .focus-card {
   background: #fff;
   border: 1px solid var(--gray-200);
@@ -2164,6 +2168,11 @@ a.logos-block__item::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+  }
+
+  .nav-logo {
+    padding-bottom: 0.2rem;
   }
 
   .website-navigation-list {
@@ -2173,31 +2182,43 @@ a.logos-block__item::after {
 
   .website-navigation-list.active {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: var(--nav-height);
     left: 0;
     right: 0;
+    bottom: 0;
     background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--gray-200);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     z-index: 100;
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
   }
 
   .website-navigation-list__wrapper {
     flex-direction: column;
     height: auto;
     overflow: visible;
+    align-items: center;
+    width: 100%;
   }
 
   .website-navigation-list__item {
     margin-right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .website-navigation-item {
     height: auto;
-    padding: 0.75rem 1.5rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
   }
 
   .website-navigation-item::after {
@@ -2214,13 +2235,15 @@ a.logos-block__item::after {
   }
 
   .hero__logos {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+    align-items: center;
   }
 
   .hero__logo-left img {
-    height: 80px;
+    height: 65px;
   }
 
   .hero__logo-center img {
@@ -2228,7 +2251,7 @@ a.logos-block__item::after {
   }
 
   .hero__logo-right img {
-    height: 60px;
+    height: 65px;
   }
 
   .hero__title {
@@ -2263,6 +2286,19 @@ a.logos-block__item::after {
     font-size: 1.6rem;
   }
 
+  .page-header__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .btn-past-committees {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.85rem 1.5rem;
+  }
+
   .focus-cards {
     grid-template-columns: 1fr;
   }
@@ -2276,21 +2312,28 @@ a.logos-block__item::after {
   }
 
   .schedule-toolbar {
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
   .schedule-search {
+    flex: 1 1 180px;
     max-width: 100%;
   }
 
   .schedule-calendar-sync {
+    flex-shrink: 0;
     margin-left: 0;
-    width: 100%;
+    width: auto;
   }
 
   .schedule-calendar-btn {
+    width: auto;
+  }
+
+  .schedule-filters {
     width: 100%;
-    justify-content: center;
+    order: 3;
   }
 
   .schedule-calendar-dropdown {
@@ -2327,6 +2370,10 @@ a.logos-block__item::after {
   .logos-block__item {
     height: 75px;
     padding: 0.75rem 1rem;
+  }
+
+  .keywords-section {
+    display: none;
   }
 }
 
