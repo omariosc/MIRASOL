@@ -2171,16 +2171,12 @@ a.logos-block__item::after {
     margin-left: auto;
   }
 
-  .nav-logo {
-    padding-bottom: 0.2rem;
+  /* Lock nav bar to its design height so the overlay top aligns flush */
+  .website-navigation__wrapper {
+    height: var(--nav-height);
   }
 
-  .website-navigation-list {
-    display: none;
-    height: auto;
-  }
-
-  /* Desktop nav hidden on mobile — overlay handles it instead */
+  /* Desktop nav hidden on mobile — overlay handles it */
   .website-navigation-list {
     display: none !important;
   }
@@ -2404,18 +2400,18 @@ a.logos-block__item::after {
   .nav-mobile-overlay {
     display: none;
     position: fixed;
-    top: var(--nav-height);
+    top: calc(var(--nav-height) + 1px);
     left: 0;
     right: 0;
-    bottom: 0;
     background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--gray-200);
     z-index: 99;
-    overflow-y: auto;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5rem;
+    padding: 0.5rem 0 0.75rem;
   }
 
   .nav-mobile-overlay.is-open {
