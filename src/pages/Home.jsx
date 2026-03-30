@@ -262,13 +262,13 @@ export default function Home() {
                 <strong>Submission Portal Open:</strong> 15 April 2026
               </p>
               <p>
-                <strong>Full Paper Submission Deadline:</strong> 15 July 2026, 11:59 PM EST
+                <strong>Full Paper Submission Deadline:</strong> 15 July 2026
               </p>
               <p>
-                <strong>Notification of Acceptance:</strong> 1 August / 15 August 2026
+                <strong>Notification of Acceptance:</strong> 1 August 2026
               </p>
               <p>
-                <strong>Camera-ready Submission:</strong> 15 August / 3 September 2026, 11:59 PM EST
+                <strong>Camera-ready Submission:</strong> 15 August 2026
               </p>
               <p>
                 <strong>Workshop Date:</strong> 4 or 8 October 2026

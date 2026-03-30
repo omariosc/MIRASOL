@@ -301,18 +301,18 @@ export default function HowToSubmit() {
                   },
                   {
                     label: "Full Paper Submission Deadline",
-                    value: "15 July 2026, 11:59 PM EST",
-                    date: "2026-07-16T04:59:00Z",
+                    value: "15 July 2026",
+                    date: "2026-07-15",
                   },
                   {
                     label: "Notification of Acceptance",
-                    value: "1 Aug / 15 Aug 2026",
-                    date: "2026-08-15",
+                    value: "1 August 2026",
+                    date: "2026-08-01",
                   },
                   {
                     label: "Camera-ready Submission",
-                    value: "15 Aug / 3 Sep 2026, 11:59 PM EST",
-                    date: "2026-09-04T04:59:00Z",
+                    value: "15 August 2026",
+                    date: "2026-08-15",
                   },
                   {
                     label: "Workshop Date",
