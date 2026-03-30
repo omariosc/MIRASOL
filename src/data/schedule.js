@@ -3,21 +3,21 @@ export const TIMEZONE = 'Asia/Dubai'
 export const LOCATION = 'ADNEC Centre Abu Dhabi, Abu Dhabi, United Arab Emirates'
 
 export const sections = [
-  { id: 'se-i', title: 'SE I: TB Challenges (8:00 – 10:00)' },
+  { id: 'se-i', title: 'SE I: Tuberc Challenges (8:00 – 10:00)' },
   { id: 'break-1', title: 'Break' },
   { id: 'se-ii', title: 'SE II: AFRICAI (10:30 – 14:30)' },
   { id: 'se-iii', title: 'SE III: MIRASOL-RISE Workshop (14:30 – 18:00)' },
 ]
 
 export const scheduleItems = [
-  // SE I: TB Challenges
+  // SE I: Tuberc Challenges
   {
     id: 1,
     section: 'se-i',
     category: 'keynote',
     startTime: '2026-10-15T08:00:00+04:00',
     endTime: '2026-10-15T09:00:00+04:00',
-    title: 'Keynote: Talk Title (TB Challenge)',
+    title: 'Keynote: Talk Title (Tuberc Challenge)',
     speaker: 'Speaker TBA',
     label: 'Keynote',
     labelClass: '-keynote',
@@ -159,7 +159,7 @@ export const scheduleItems = [
     category: 'interactive',
     startTime: '2026-10-15T17:30:00+04:00',
     endTime: '2026-10-15T18:00:00+04:00',
-    title: 'Joint AM Poster Sessions',
+    title: 'Joint PM Poster Sessions',
     speaker: '',
     label: 'Poster Session',
     labelClass: '-poster',
