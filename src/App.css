@@ -2156,6 +2156,28 @@ a.logos-block__item::after {
   transform: translateY(0);
 }
 
+/* ===== MOBILE HERO ===== */
+.hero-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero--desktop {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-mobile img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .text-block.-inline {

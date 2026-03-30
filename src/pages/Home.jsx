@@ -15,7 +15,8 @@ const keywordsRow2 = ["CT", "US", "EEG", "ECG", "X-ray", "Low-Resource"];
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      {/* Desktop hero */}
+      <section className="hero hero--desktop">
         <div className="hero__bg">
           <img src={img("abudhabi.jpg")} alt="Abu Dhabi skyline" />
         </div>
@@ -45,6 +46,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Mobile hero — single image, no overlays */}
+      <div className="hero-mobile">
+        <img src={img("hero-mobile.jpg")} alt="MIRASOL Workshop at MICCAI 2026" />
+      </div>
 
       {/* Keywords */}
       <div className="keywords-section">
