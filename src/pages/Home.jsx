@@ -343,23 +343,24 @@ export default function Home() {
         </div>
       </ScrollReveal>
 
-      {/* Group Photo */}
+      {/* Past Workshop Photos */}
       <ScrollReveal className="content-block -alt">
         <div className="content-block__container">
-          <div className="gallery-block-grid -medium">
-            <div className="gallery-block-grid__list">
-              <div className="gallery-block-grid__item">
-                <div
-                  className="content-block-image"
-                  style={{ "--aspect-ratio": 2.8 }}
-                >
-                  <img
-                    src={img("divider-sponsors.png")}
-                    alt="MICCAI workshop attendees"
-                    className="content-block-image__image"
-                  />
-                </div>
-              </div>
+          <div className="rte" style={{ marginBottom: '1.25rem' }}><h2>Past Workshops</h2></div>
+          <div className="focus-cards">
+            <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
+              <img
+                src={img("banner.jpg")}
+                alt="MIRASOL 2025 — Daejeon, South Korea"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+            <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
+              <img
+                src={img("divider-sponsors.png")}
+                alt="MIRASOL 2024 — Marrakesh, Morocco"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
             </div>
           </div>
         </div>
