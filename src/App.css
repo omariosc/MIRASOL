@@ -758,7 +758,7 @@ a.focus-card.-link:hover {
 
 .logos-block__list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   max-width: 720px;
   margin: 0 auto;
