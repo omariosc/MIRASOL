@@ -350,7 +350,7 @@ export default function Home() {
           <div className="focus-cards">
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
               <img
-                src={img("banner.jpg")}
+                src={img("mirasol-2025.png")}
                 alt="MIRASOL 2025 — Daejeon, South Korea"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
