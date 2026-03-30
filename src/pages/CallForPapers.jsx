@@ -140,6 +140,15 @@ export default function CallForPapers() {
                 </li>
               </ol> */}
             </div>
+            <div className="rte" style={{ marginTop: '1.5rem' }}>
+              <h3>Computing Resource Support</h3>
+              <p>To encourage paper submission from researchers who live and work in LMICs, we are providing access to computing resources to those with demonstrated need. Complete a request form using the link below to request access. Eligible researchers will be contacted with access details within two weeks on a first-come first-serve basis. Resource is available from May 1st to August 15th 2026.</p>
+              <p><strong>How to apply:</strong></p>
+              <ol>
+                <li>Computing Resource Access Request form: <strong>TBA</strong></li>
+                <li>During MIRASOL paper submission, select that you have applied for computing resource support.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </ScrollReveal>
