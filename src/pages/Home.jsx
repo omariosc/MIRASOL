@@ -10,7 +10,7 @@ const keywordsRow1 = [
   "MRI",
   "PET",
 ];
-const keywordsRow2 = ["CT", "US", "EEG", "ECG", "X-ray", "Low-Resource"];
+const keywordsRow2 = ["CT", "US", "EEG", "ECG", "X-ray", "Low-Resource", "Middle-East", "South-Asia", "Africa", "Latin America"];
 
 export default function Home() {
   return (
