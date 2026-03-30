@@ -6,7 +6,7 @@ export default function HowToSubmit() {
     <>
       <header className="page-header">
         <div className="page-header__container">
-          <h1 className="page-header__title">How to Submit</h1>
+          <h1 className="page-header__title">Submission Portal</h1>
           <a
             className="btn-past-committees"
             href="https://cmt3.research.microsoft.com/MIRASOL2026"
