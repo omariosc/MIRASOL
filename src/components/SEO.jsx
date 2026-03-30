@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SITE_NAME = 'MIRASOL Workshop | MICCAI 2026'
-const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building Inclusive and Efficient AI Technologies for Medical Imaging in Africa and Other Resource-Constrained Settings.'
+const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building Inclusive and Efficient AI Technologies for Medical Imaging in Resource-Constrained Settings.'
 
 const pageMeta = {
   '/': {

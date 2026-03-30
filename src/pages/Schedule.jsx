@@ -85,7 +85,7 @@ export default function Schedule() {
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Program-at-a-Glance</h2>
-            <p><strong>Joint Topic:</strong> Building Inclusive and Efficient AI Technologies for Medical Imaging in Africa and Other Resource-Constrained Settings.</p>
+            <p><strong>Joint Topic:</strong> Building Inclusive and Efficient AI Technologies for Medical Imaging in Resource-Constrained Settings.</p>
           </div></div>
           <div style={{marginTop:'1.25rem'}}>
             <a

@@ -106,7 +106,7 @@ export default function HowToSubmit() {
               { label: 'Full Paper Submission Deadline', value: 'TBC' },
               { label: 'Notification of Acceptance', value: 'TBC' },
               { label: 'Camera-ready Submission', value: 'TBC' },
-              { label: 'Workshop Date', value: 'TBC (October 2026)' },
+              { label: 'Workshop Date', value: 'October 4th or 8th, 2026' },
               { label: 'Workshop Proceedings Submission', value: 'TBC' },
             ]} />
           </div></div>

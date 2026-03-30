@@ -37,10 +37,10 @@ export default function Home() {
           <div className="hero__text">
             <h1 className="hero__title">
               Building Inclusive and Efficient AI Technologies for Medical
-              Imaging in Africa and Other Resource-Constrained Settings
+              Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
-              Date: TBC &mdash; ADNEC Centre Abu Dhabi, UAE
+              October 4th or 8th, 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
             </p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function Home() {
                 <strong>Camera-ready Submission:</strong> TBC
               </p>
               <p>
-                <strong>Workshop Date:</strong> TBC (October 2026)
+                <strong>Workshop Date:</strong> October 4th or 8th, 2026
               </p>
               <p>
                 <strong>Proceedings Submission:</strong> TBC

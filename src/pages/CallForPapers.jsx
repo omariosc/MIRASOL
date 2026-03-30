@@ -92,7 +92,7 @@ export default function CallForPapers() {
               { label: 'Paper Submission Deadline', value: 'TBD' },
               { label: 'Notification of Acceptance', value: 'TBD' },
               { label: 'Camera-Ready Deadline', value: 'TBD' },
-              { label: 'Workshop Date', value: 'TBD (October 2026)' },
+              { label: 'Workshop Date', value: 'October 4th or 8th, 2026' },
             ]} />
             <div className="notice"><strong>Note:</strong> All dates are for 2026 and will be announced soon. All deadlines are at 23:59 Anywhere on Earth (AoE).</div>
           </div>
