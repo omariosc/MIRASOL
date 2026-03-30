@@ -164,6 +164,17 @@ export default function HowToSubmit() {
               </p>
             </div>
           </div>
+          <div className="rte" style={{ marginTop: '1.75rem' }}>
+            <h3>Suggested Paper Structure</h3>
+            <ol>
+              <li><strong>Introduction / Background</strong></li>
+              <li><strong>Previous Work</strong></li>
+              <li><strong>Methodology</strong> — specifying compute resources, data (train/val/test split), and inference time</li>
+              <li><strong>Results</strong></li>
+              <li><strong>Discussion</strong></li>
+              <li><strong>Impact in RCS</strong></li>
+            </ol>
+          </div>
         </div>
       </ScrollReveal>
 
