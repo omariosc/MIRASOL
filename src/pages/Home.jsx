@@ -116,7 +116,7 @@ export default function Home() {
             <div className="rte">
               <h3>Aim:</h3>
               <p>
-                This workshop aims to connect researchers, medical experts,
+                The 3rd MIRASOL workshop will connect researchers, medical experts,
                 policy makers, regulators, and industry partners from around the
                 world who are working on translational ML solutions for
                 real-world medical imaging in RCS, with a focus on
@@ -367,14 +367,14 @@ export default function Home() {
         <div className="content-block__container">
           <h2>Sponsors &amp; Partners</h2>
           <div className="logos-block__list">
-            <a
+            {/* <a
               href="https://www.cameramriafrica.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="logos-block__item"
             >
               <img src={img("logo-camera.png")} alt="CAMERA" />
-            </a>
+            </a> */}
             <a
               href="https://miccai.org/"
               target="_blank"
@@ -399,7 +399,7 @@ export default function Home() {
             >
               <img src={img("sponsor-2.jpeg")} alt="AFRICAI" />
             </a>
-            <div className="logos-block__item">
+            {/* <div className="logos-block__item">
               <img src={img("sponsor-3.png")} alt="Fondation Pierre Fabre" />
             </div>
             <div className="logos-block__item">
@@ -410,7 +410,7 @@ export default function Home() {
             </div>
             <div className="logos-block__item">
               <img src={img("sponsor-6.png")} alt="Frontiers" />
-            </div>
+            </div> */}
           </div>
         </div>
       </ScrollReveal>
