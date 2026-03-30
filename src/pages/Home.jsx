@@ -40,7 +40,7 @@ export default function Home() {
               Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
-              October 4th or 8th, 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
+              4 or 8 October 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
             </p>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="rte" style={{ marginBottom: "1.5rem" }}>
             <h2>Workshop Focus Areas</h2>
             <p>
-              We are looking for long and short papers that will be presented as
+              We are looking for papers that will be presented as
               contributed talks. Specifically, we encourage contributions that
               highlight issues related to:
             </p>
@@ -254,16 +254,16 @@ export default function Home() {
               </svg>
               <h2>Important Dates</h2>
               <p>
-                <strong>Full Paper Submission Deadline:</strong> TBC
+                <strong>Full Paper Submission Deadline:</strong> 15 July 2026, 11:59 PM EST
               </p>
               <p>
-                <strong>Notification of Acceptance:</strong> TBC
+                <strong>Notification of Acceptance:</strong> 1 August / 15 August 2026
               </p>
               <p>
-                <strong>Camera-ready Submission:</strong> TBC
+                <strong>Camera-ready Submission:</strong> 15 August / 3 September 2026, 11:59 PM EST
               </p>
               <p>
-                <strong>Workshop Date:</strong> October 4th or 8th, 2026
+                <strong>Workshop Date:</strong> 4 or 8 October 2026
               </p>
               <p>
                 <strong>Proceedings Submission:</strong> TBC

@@ -89,10 +89,10 @@ export default function CallForPapers() {
           <div className="text-block">
             <div className="rte"><h2>Important Dates</h2></div>
             <DatesTimeline items={[
-              { label: 'Paper Submission Deadline', value: 'TBD' },
-              { label: 'Notification of Acceptance', value: 'TBD' },
-              { label: 'Camera-Ready Deadline', value: 'TBD' },
-              { label: 'Workshop Date', value: 'October 4th or 8th, 2026' },
+              { label: 'Full Paper Submission Deadline', value: '15 July 2026, 11:59 PM EST', date: '2026-07-16T04:59:00Z' },
+              { label: 'Notification of Acceptance', value: '1 Aug / 15 Aug 2026', date: '2026-08-15' },
+              { label: 'Camera-ready Submission', value: '15 Aug / 3 Sep 2026, 11:59 PM EST', date: '2026-09-04T04:59:00Z' },
+              { label: 'Workshop Date', value: '4 or 8 October 2026', date: '2026-10-08' },
             ]} />
             <div className="notice"><strong>Note:</strong> All dates are for 2026 and will be announced soon. All deadlines are at 23:59 Anywhere on Earth (AoE).</div>
           </div>

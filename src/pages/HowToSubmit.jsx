@@ -103,10 +103,10 @@ export default function HowToSubmit() {
           <div className="text-block"><div className="rte">
             <h2>Important Dates</h2>
             <DatesTimeline items={[
-              { label: 'Full Paper Submission Deadline', value: 'TBC' },
-              { label: 'Notification of Acceptance', value: 'TBC' },
-              { label: 'Camera-ready Submission', value: 'TBC' },
-              { label: 'Workshop Date', value: 'October 4th or 8th, 2026' },
+              { label: 'Full Paper Submission Deadline', value: '15 July 2026, 11:59 PM EST', date: '2026-07-16T04:59:00Z' },
+              { label: 'Notification of Acceptance', value: '1 Aug / 15 Aug 2026', date: '2026-08-15' },
+              { label: 'Camera-ready Submission', value: '15 Aug / 3 Sep 2026, 11:59 PM EST', date: '2026-09-04T04:59:00Z' },
+              { label: 'Workshop Date', value: '4 or 8 October 2026', date: '2026-10-08' },
               { label: 'Workshop Proceedings Submission', value: 'TBC' },
             ]} />
           </div></div>

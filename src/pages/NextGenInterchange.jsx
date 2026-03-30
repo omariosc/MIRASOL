@@ -205,10 +205,10 @@ export default function NextGenInterchange() {
         <div className="content-block__container"><div className="text-block">
           <div className="rte"><h2>Key Dates</h2></div>
           <DatesTimeline items={[
-            { label: 'Submission Deadline', value: 'TBC' },
-            { label: 'Acceptance Notification', value: 'TBC' },
-            { label: 'Camera-ready Submission', value: 'TBC' },
-            { label: 'Workshop Date', value: 'October 4th or 8th, 2026' },
+            { label: 'Submission Deadline', value: '15 July 2026, 11:59 PM EST', date: '2026-07-16T04:59:00Z' },
+            { label: 'Acceptance Notification', value: '1 Aug / 15 Aug 2026', date: '2026-08-15' },
+            { label: 'Camera-ready Submission', value: '15 Aug / 3 Sep 2026, 11:59 PM EST', date: '2026-09-04T04:59:00Z' },
+            { label: 'Workshop Date', value: '4 or 8 October 2026', date: '2026-10-08' },
             { label: 'Workshop Proceedings Submission', value: 'TBC' },
           ]} />
         </div></div>
