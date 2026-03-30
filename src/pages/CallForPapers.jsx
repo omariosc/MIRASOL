@@ -17,82 +17,50 @@ export default function CallForPapers() {
               following core areas of focus:
             </p>
           </div>
-          <div className="focus-cards -three-col">
+          <div className="focus-cards">
             <div className="focus-card -watermark">
               <div className="focus-card__number">1</div>
-              <h3>Overcoming Healthcare Barriers in RCS</h3>
+              <h3>Methodological Advances for Medical Imaging in RCS</h3>
+              <p>Theoretical and practical ML algorithms for overcoming healthcare barriers in RCS</p>
               <ul>
-                <li>
-                  Address poor imaging quality, scan completeness, and data
-                  sharing challenges
-                </li>
-                <li>
-                  Utilise affordable X-rays, ultrasound, and smartphone
-                  diagnostics
-                </li>
-                <li>
-                  Deploy biosignals like EEG and ECG for cost-effective
-                  diagnoses
-                </li>
-                <li>
-                  Propose low-cost image-guided therapies and
-                  computer-integrated interventions
-                </li>
+                <li>Address data scarcity, poor image quality, and data sharing challenges.</li>
+                <li>Enhance image quality with innovative techniques for low-cost devices.</li>
+                <li>Develop data-efficient ML models suited for RCS sparse data environments.</li>
+                <li>Implement robust strategies for handling missing and noisy data.</li>
+                <li>Apply cost-effective transfer learning and domain adaptation.</li>
               </ul>
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">2</div>
-              <h3>Methodological Advances in ML</h3>
+              <h3>Resource-efficient Clinical Outcome Prediction</h3>
+              <p>Evaluation or validation of ML methods for clinical outcome prediction in RCS</p>
               <ul>
-                <li>
-                  Enhance image quality with innovative techniques for low-cost
-                  devices
-                </li>
-                <li>
-                  Develop data-efficient ML models suited for RCS sparse data
-                  environments
-                </li>
-                <li>
-                  Implement robust strategies for handling missing and noisy
-                  data
-                </li>
-                <li>
-                  Apply cost-effective transfer learning and domain adaptation
-                </li>
-                <li>
-                  Focus on AI model bias mitigation and model compression for
-                  equity and resource efficiency
-                </li>
+                <li>Forecasting and predictive analytics that leverage imaging and multimodal healthcare data.</li>
+                <li>Advance early disease detection and monitoring progression with minimal resources.</li>
+                <li>Utilise affordable X-rays, ultrasound, and smartphone diagnostics.</li>
+                <li>Deploy biosignals like EEG and ECG for cost-effective diagnoses.</li>
+                <li>Propose low-cost image-guided therapies and computer-integrated interventions.</li>
               </ul>
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">3</div>
-              <h3>Driving ML Innovations for Improved Care</h3>
+              <h3>Societal &amp; Policy Impact in RCS</h3>
               <ul>
-                <li>
-                  Tailor ML algorithms to meet specific medical imaging
-                  challenges in RCS
-                </li>
-                <li>
-                  Advance early disease detection and monitoring with minimal
-                  resources
-                </li>
-                <li>
-                  Leverage multimodal data for predictive analytics in patient
-                  management
-                </li>
-                <li>
-                  Evaluate ML&rsquo;s impact on healthcare access and policies
-                  in RCS
-                </li>
-                <li>
-                  Accelerate the adoption of ML innovations for sustainable
-                  healthcare improvements
-                </li>
-                <li>
-                  Develop solutions to manage data scarcity and optimise
-                  computational resources
-                </li>
+                <li>Evaluate ML&rsquo;s impact on healthcare access and policies in RCS.</li>
+                <li>Accelerate the adoption of ML innovations for sustainable healthcare improvements.</li>
+                <li>Describe ML impacts in RCS obtained from pilot studies, qualitative research or human-in-the-loop settings.</li>
+                <li>Develop frameworks to manage data scarcity and optimise computational resources.</li>
+              </ul>
+            </div>
+            <div className="focus-card -watermark">
+              <div className="focus-card__number">4</div>
+              <h3>Capacity Building</h3>
+              <ul>
+                <li>Approaches to build and accelerate ML capacity and health innovations in LMICs.</li>
+                <li>Education and training approaches to close ML knowledge and skills gap in RCS.</li>
+                <li>ML approaches to advance healthcare operational efficiency and speed.</li>
+                <li>Focus on AI model bias mitigation and model compression for equity and resource efficiency.</li>
+                <li>Use of agentic AI solutions to bridge skills gaps and improve imaging capacity in RCS.</li>
               </ul>
             </div>
           </div>
