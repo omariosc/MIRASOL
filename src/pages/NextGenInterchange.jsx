@@ -472,18 +472,15 @@ export default function NextGenInterchange() {
               items={[
                 {
                   label: "Submission Deadline",
-                  value: "15 July 2026",
-                  date: "2026-07-15",
+                  value: "TBC",
                 },
                 {
                   label: "Acceptance Notification",
-                  value: "15 August 2026",
-                  date: "2026-08-15",
+                  value: "TBC",
                 },
                 {
                   label: "Camera-ready Submission",
-                  value: "03 September 2026",
-                  date: "2026-09-03",
+                  value: "TBC",
                 },
                 {
                   label: "Workshop Date",
