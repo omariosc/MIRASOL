@@ -97,7 +97,7 @@ export default function AmbassadorProgram() {
             { label: 'Call Opens', value: 'TBC' },
             { label: 'Call Closes', value: 'TBC' },
             { label: 'Notification and Matching', value: 'TBC' },
-            { label: 'Workshop Date', value: '4 or 8 October 2026', date: '2026-10-08' },
+            { label: 'Workshop Date', value: '04 or 08 October 2026', date: '2026-10-08' },
           ]} />
         </div></div>
       </ScrollReveal>

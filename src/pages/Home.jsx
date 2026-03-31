@@ -41,7 +41,7 @@ export default function Home() {
               Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
-              4 or 8 October 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
+              04 or 08 October 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
             </p>
           </div>
         </div>
@@ -271,7 +271,7 @@ export default function Home() {
                 <strong>Camera-ready Submission:</strong> 03 September 2026
               </p>
               <p>
-                <strong>Workshop Date:</strong> 4 or 8 October 2026
+                <strong>Workshop Date:</strong> 04 or 08 October 2026
               </p>
               {/* <p>
                 <strong>Proceedings Submission:</strong> TBC
