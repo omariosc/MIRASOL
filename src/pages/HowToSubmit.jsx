@@ -169,7 +169,13 @@ export default function HowToSubmit() {
             <ol>
               <li><strong>Introduction / Background</strong></li>
               <li><strong>Previous Work</strong></li>
-              <li><strong>Methodology</strong> — specifying compute resources, data (train/val/test split), and inference time</li>
+              <li>
+                <strong>Methodology</strong>
+                <br />
+                <span style={{ fontSize: '0.85em', color: 'var(--gray-500)', paddingLeft: '0.25rem' }}>
+                  Specifying compute resources, data (train/val/test split), and inference time
+                </span>
+              </li>
               <li><strong>Results</strong></li>
               <li><strong>Discussion</strong></li>
               <li><strong>Impact in RCS</strong></li>
@@ -306,20 +312,20 @@ export default function HowToSubmit() {
                   },
                   {
                     label: "Notification of Acceptance",
-                    value: "1 August 2026",
-                    date: "2026-08-01",
+                    value: "15 August 2026",
+                    date: "2026-08-15",
                   },
                   {
                     label: "Camera-ready Submission",
-                    value: "15 August 2026",
-                    date: "2026-08-15",
+                    value: "03 September 2026",
+                    date: "2026-09-03",
                   },
                   {
                     label: "Workshop Date",
                     value: "4 or 8 October 2026",
                     date: "2026-10-08",
                   },
-                  { label: "Workshop Proceedings Submission", value: "TBC" },
+                  // { label: "Workshop Proceedings Submission", value: "TBC" },
                 ]}
               />
             </div>

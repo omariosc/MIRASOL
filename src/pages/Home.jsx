@@ -265,17 +265,17 @@ export default function Home() {
                 <strong>Full Paper Submission Deadline:</strong> 15 July 2026
               </p>
               <p>
-                <strong>Notification of Acceptance:</strong> 1 August 2026
+                <strong>Notification of Acceptance:</strong> 15 August 2026
               </p>
               <p>
-                <strong>Camera-ready Submission:</strong> 15 August 2026
+                <strong>Camera-ready Submission:</strong> 03 September 2026
               </p>
               <p>
                 <strong>Workshop Date:</strong> 4 or 8 October 2026
               </p>
-              <p>
+              {/* <p>
                 <strong>Proceedings Submission:</strong> TBC
-              </p>
+              </p> */}
             </div>
             <div className="info-card">
               <svg

@@ -477,20 +477,20 @@ export default function NextGenInterchange() {
                 },
                 {
                   label: "Acceptance Notification",
-                  value: "1 August 2026",
-                  date: "2026-08-01",
+                  value: "15 August 2026",
+                  date: "2026-08-15",
                 },
                 {
                   label: "Camera-ready Submission",
-                  value: "15 August 2026",
-                  date: "2026-08-15",
+                  value: "03 September 2026",
+                  date: "2026-09-03",
                 },
                 {
                   label: "Workshop Date",
                   value: "4 or 8 October 2026",
                   date: "2026-10-08",
                 },
-                { label: "Workshop Proceedings Submission", value: "TBC" },
+                // { label: "Workshop Proceedings Submission", value: "TBC" },
               ]}
             />
           </div>

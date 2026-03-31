@@ -174,13 +174,13 @@ export default function CallForPapers() {
                 },
                 {
                   label: "Notification of Acceptance",
-                  value: "1 August 2026",
-                  date: "2026-08-01",
+                  value: "15 August 2026",
+                  date: "2026-08-15",
                 },
                 {
                   label: "Camera-ready Submission",
-                  value: "15 August 2026",
-                  date: "2026-08-15",
+                  value: "03 September 2026",
+                  date: "2026-09-03",
                 },
                 {
                   label: "Workshop Date",
