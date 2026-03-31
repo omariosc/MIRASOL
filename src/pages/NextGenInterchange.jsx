@@ -484,7 +484,7 @@ export default function NextGenInterchange() {
                 },
                 {
                   label: "Workshop Date",
-                  value: "4 or 8 October 2026",
+                  value: "04 or 08 October 2026",
                   date: "2026-10-08",
                 },
                 // { label: "Workshop Proceedings Submission", value: "TBC" },

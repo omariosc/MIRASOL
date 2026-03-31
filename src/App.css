@@ -776,9 +776,11 @@ a.focus-card.-link:hover {
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
-/* Hide external-link icon on sponsor logos */
+/* Hide external-link icon on any link wrapping an image */
+a[target="_blank"]:has(img)::after,
 .logos-block__item::after,
-a.logos-block__item::after {
+a.logos-block__item::after,
+.footer__bottom-logos a::after {
   display: none !important;
 }
 

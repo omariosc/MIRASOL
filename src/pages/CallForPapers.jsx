@@ -21,46 +21,108 @@ export default function CallForPapers() {
             <div className="focus-card -watermark">
               <div className="focus-card__number">1</div>
               <h3>Methodological Advances for Medical Imaging in RCS</h3>
-              <p>Theoretical and practical ML algorithms for overcoming healthcare barriers in RCS</p>
+              <p>
+                Theoretical and practical ML algorithms for overcoming
+                healthcare barriers in RCS
+              </p>
               <ul>
-                <li>Address data scarcity, poor image quality, and data sharing challenges.</li>
-                <li>Enhance image quality with innovative techniques for low-cost devices.</li>
-                <li>Develop data-efficient ML models suited for RCS sparse data environments.</li>
-                <li>Implement robust strategies for handling missing and noisy data.</li>
-                <li>Apply cost-effective transfer learning and domain adaptation.</li>
+                <li>
+                  Address data scarcity, poor image quality, and data sharing
+                  challenges.
+                </li>
+                <li>
+                  Enhance image quality with innovative techniques for low-cost
+                  devices.
+                </li>
+                <li>
+                  Develop data-efficient ML models suited for RCS sparse data
+                  environments.
+                </li>
+                <li>
+                  Implement robust strategies for handling missing and noisy
+                  data.
+                </li>
+                <li>
+                  Apply cost-effective transfer learning and domain adaptation.
+                </li>
               </ul>
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">2</div>
               <h3>Resource-efficient Clinical Outcome Prediction</h3>
-              <p>Evaluation or validation of ML methods for clinical outcome prediction in RCS</p>
+              <p>
+                Evaluation or validation of ML methods for clinical outcome
+                prediction in RCS
+              </p>
               <ul>
-                <li>Forecasting and predictive analytics that leverage imaging and multimodal healthcare data.</li>
-                <li>Advance early disease detection and monitoring progression with minimal resources.</li>
-                <li>Utilise affordable X-rays, ultrasound, and smartphone diagnostics.</li>
-                <li>Deploy biosignals like EEG and ECG for cost-effective diagnoses.</li>
-                <li>Propose low-cost image-guided therapies and computer-integrated interventions.</li>
+                <li>
+                  Forecasting and predictive analytics that leverage imaging and
+                  multimodal healthcare data.
+                </li>
+                <li>
+                  Advance early disease detection and monitoring progression
+                  with minimal resources.
+                </li>
+                <li>
+                  Utilise affordable X-rays, ultrasound, and smartphone
+                  diagnostics.
+                </li>
+                <li>
+                  Deploy biosignals like EEG and ECG for cost-effective
+                  diagnoses.
+                </li>
+                <li>
+                  Propose low-cost image-guided therapies and
+                  computer-integrated interventions.
+                </li>
               </ul>
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">3</div>
               <h3>Societal &amp; Policy Impact in RCS</h3>
               <ul>
-                <li>Evaluate ML&rsquo;s impact on healthcare access and policies in RCS.</li>
-                <li>Accelerate the adoption of ML innovations for sustainable healthcare improvements.</li>
-                <li>Describe ML impacts in RCS obtained from pilot studies, qualitative research or human-in-the-loop settings.</li>
-                <li>Develop frameworks to manage data scarcity and optimise computational resources.</li>
+                <li>
+                  Evaluate ML&rsquo;s impact on healthcare access and policies
+                  in RCS.
+                </li>
+                <li>
+                  Accelerate the adoption of ML innovations for sustainable
+                  healthcare improvements.
+                </li>
+                <li>
+                  Describe ML impacts in RCS obtained from pilot studies,
+                  qualitative research or human-in-the-loop settings.
+                </li>
+                <li>
+                  Develop frameworks to manage data scarcity and optimise
+                  computational resources.
+                </li>
               </ul>
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">4</div>
               <h3>Sustainability and Capacity Building</h3>
               <ul>
-                <li>Approaches to build, accelerate and sustain ML capacity and health innovations in LMICs.</li>
-                <li>Education and training approaches to close ML knowledge and skills gap in RCS.</li>
-                <li>ML approaches to advance healthcare operational efficiency and speed.</li>
-                <li>Focus on AI model bias mitigation and model compression for equity and resource efficiency.</li>
-                <li>Use of agentic AI solutions to bridge skills gaps and improve imaging capacity in RCS.</li>
+                <li>
+                  Approaches to build, accelerate and sustain ML capacity and
+                  health innovations in LMICs.
+                </li>
+                <li>
+                  Education and training approaches to close ML knowledge and
+                  skills gap in RCS.
+                </li>
+                <li>
+                  ML approaches to advance healthcare operational efficiency and
+                  speed.
+                </li>
+                <li>
+                  Focus on AI model bias mitigation and model compression for
+                  equity and resource efficiency.
+                </li>
+                <li>
+                  Use of agentic AI solutions to bridge skills gaps and improve
+                  imaging capacity in RCS.
+                </li>
               </ul>
             </div>
           </div>
@@ -140,14 +202,39 @@ export default function CallForPapers() {
                 </li>
               </ol> */}
             </div>
-            <div className="rte" style={{ marginTop: '1.5rem' }}>
+            <div className="rte" style={{ marginTop: "1.5rem" }}>
               <h3>Computing Resource Support</h3>
-              <p>To encourage paper submission from researchers who live and work in LMICs, we are providing access to computing resources to those with demonstrated need. Complete a request form using the link below to request access. Eligible researchers will be contacted with access details within two weeks on a first-come first-serve basis. Resource is available from May 1st to August 15th 2026.</p>
-              <p><strong>How to apply:</strong></p>
+              <p>
+                To encourage paper submission from researchers who live and work
+                in LMICs, we are providing access to computing resources to
+                those with demonstrated need, through the generous contribution
+                of Digital Research Alliance of Canada. Complete a request form
+                using the link below to request access. Eligible researchers
+                will be contacted with access details within two weeks on a
+                first-come first-serve basis. Resource is available from May 1st
+                to August 15th 2026.
+              </p>
+              <p>
+                <strong>How to apply:</strong>
+              </p>
               <ol>
-                <li>Submission Form: <strong>TBA</strong></li>
-                <li>Instructions: <a href="https://docs.google.com/document/d/16ULFFz5fR3TXU1NJZlvO3g2KRWU9K29ezcCboDBzU8g" target="_blank" rel="noopener">Computing Resource Support Guidelines</a></li>
-                <li>During MIRASOL paper submission, select that you have applied for computing resource support.</li>
+                <li>
+                  Submission Form: <strong>TBA</strong>
+                </li>
+                <li>
+                  Instructions:{" "}
+                  <a
+                    href="https://docs.google.com/document/d/16ULFFz5fR3TXU1NJZlvO3g2KRWU9K29ezcCboDBzU8g"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Computing Resource Support Guidelines
+                  </a>
+                </li>
+                <li>
+                  During MIRASOL paper submission, select that you have applied
+                  for computing resource support.
+                </li>
               </ol>
             </div>
           </div>
@@ -204,20 +291,34 @@ export default function CallForPapers() {
             <div className="rte">
               <h2>Submission Guidelines</h2>
               <p>
-                Submissions are invited as long papers (<strong>8 pages of content plus 2 pages for references</strong>) in PDF format using either the LaTeX or Word{" "}
+                Submissions are invited as long papers (
+                <strong>8 pages of content plus 2 pages for references</strong>)
+                in PDF format using either the LaTeX or Word{" "}
                 <a
                   href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
                   target="_blank"
                   rel="noopener"
                 >
                   Springer Computer Science Proceedings template
-                </a>. Authors must adhere strictly to the workshop paper format, including the use of the provided template and the recommended paper structure (see submission portal for details).
+                </a>
+                . Authors must adhere strictly to the workshop paper format,
+                including the use of the provided template and the recommended
+                paper structure (see submission portal for details).
               </p>
               <p>
-                The MIRASOL Workshop follows a <strong>double-blind review process</strong>. All submissions must be <strong>completely anonymised</strong> &mdash; authors must remove any identifying information, including names, affiliations, and self-citations that could reveal authorship. Each submission will be reviewed by at least <strong>two external reviewers</strong> to assess its suitability for inclusion in the workshop program.
+                The MIRASOL Workshop follows a{" "}
+                <strong>double-blind review process</strong>. All submissions
+                must be <strong>completely anonymised</strong> &mdash; authors
+                must remove any identifying information, including names,
+                affiliations, and self-citations that could reveal authorship.
+                Each submission will be reviewed by at least{" "}
+                <strong>two external reviewers</strong> to assess its
+                suitability for inclusion in the workshop program.
               </p>
               <div className="notice">
-                <strong>Important:</strong> Modifications to the template are not allowed, and failure to comply with the formatting guidelines will result in rejection.
+                <strong>Important:</strong> Modifications to the template are
+                not allowed, and failure to comply with the formatting
+                guidelines will result in rejection.
               </div>
             </div>
           </div>
@@ -229,7 +330,8 @@ export default function CallForPapers() {
           <div className="text-block -inline">
             <div className="rte">
               <p>
-                Ready to submit? View the full submission portal, templates, and paper structure.
+                Ready to submit? View the full submission portal, templates, and
+                paper structure.
               </p>
             </div>
             <Link className="action-element -primary" to="/how-to-submit">
