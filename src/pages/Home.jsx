@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="hero__text">
             <h1 className="hero__title">
-              Building Inclusive and Efficient AI Technologies for Medical
+              Building and Sustaining Efficient Technologies for Medical
               Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
@@ -222,9 +222,9 @@ export default function Home() {
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">4</div>
-              <h3>Capacity Building</h3>
+              <h3>Sustainability and Capacity Building</h3>
               <p>
-                Approaches to build and rapidly scale capacity for ML
+                Approaches to sustainably build and rapidly scale capacity for ML
                 innovations in health in RCS, particularly in LMICs.
               </p>
             </div>

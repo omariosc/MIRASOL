@@ -57,7 +57,7 @@ export default function AmbassadorProgram() {
       <ScrollReveal className="content-block">
         <div className="content-block__container">
           <div className="rte" style={{ marginBottom: '1.5rem' }}>
-            <h2>Application Process</h2>
+            <h2>Join the Program</h2>
           </div>
           <div className="timeline">
             <div className="timeline__step">
@@ -96,7 +96,7 @@ export default function AmbassadorProgram() {
           <DatesTimeline items={[
             { label: 'Call Opens', value: 'TBC' },
             { label: 'Call Closes', value: 'TBC' },
-            { label: 'Matching Notification', value: 'TBC' },
+            { label: 'Notification and Matching', value: 'TBC' },
             { label: 'Workshop Date', value: '4 or 8 October 2026', date: '2026-10-08' },
           ]} />
         </div></div>

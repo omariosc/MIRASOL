@@ -54,9 +54,9 @@ export default function CallForPapers() {
             </div>
             <div className="focus-card -watermark">
               <div className="focus-card__number">4</div>
-              <h3>Capacity Building</h3>
+              <h3>Sustainability and Capacity Building</h3>
               <ul>
-                <li>Approaches to build and accelerate ML capacity and health innovations in LMICs.</li>
+                <li>Approaches to build, accelerate and sustain ML capacity and health innovations in LMICs.</li>
                 <li>Education and training approaches to close ML knowledge and skills gap in RCS.</li>
                 <li>ML approaches to advance healthcare operational efficiency and speed.</li>
                 <li>Focus on AI model bias mitigation and model compression for equity and resource efficiency.</li>
@@ -200,11 +200,36 @@ export default function CallForPapers() {
 
       <ScrollReveal className="content-block">
         <div className="content-block__container">
+          <div className="text-block">
+            <div className="rte">
+              <h2>Submission Guidelines</h2>
+              <p>
+                Submissions are invited as long papers (<strong>8 pages of content plus 2 pages for references</strong>) in PDF format using either the LaTeX or Word{" "}
+                <a
+                  href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Springer Computer Science Proceedings template
+                </a>. Authors must adhere strictly to the workshop paper format, including the use of the provided template and the recommended paper structure (see submission portal for details).
+              </p>
+              <p>
+                The MIRASOL Workshop follows a <strong>double-blind review process</strong>. All submissions must be <strong>completely anonymised</strong> &mdash; authors must remove any identifying information, including names, affiliations, and self-citations that could reveal authorship. Each submission will be reviewed by at least <strong>two external reviewers</strong> to assess its suitability for inclusion in the workshop program.
+              </p>
+              <div className="notice">
+                <strong>Important:</strong> Modifications to the template are not allowed, and failure to comply with the formatting guidelines will result in rejection.
+              </div>
+            </div>
+          </div>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal className="content-block -alt">
+        <div className="content-block__container">
           <div className="text-block -inline">
             <div className="rte">
               <p>
-                Ready to contribute? Review the submission guidelines and
-                prepare your manuscript.
+                Ready to submit? View the full submission portal, templates, and paper structure.
               </p>
             </div>
             <Link className="action-element -primary" to="/how-to-submit">

@@ -28,7 +28,7 @@ export default function SubmissionCards() {
             </div>
             <p>
               Both registered reports and 3MP videos must be submitted through
-              the CMT submission portal.
+              the OpenReview submission portal.
             </p>
             <div
               style={{
@@ -39,11 +39,11 @@ export default function SubmissionCards() {
             >
               <a
                 className="action-element -primary"
-                href="https://cmt3.research.microsoft.com/MIRASOL2026"
+                href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/MIRASOL&referrer=%5BHomepage%5D(%2F)"
                 target="_blank"
                 rel="noopener"
               >
-                Submit via CMT Portal
+                Submit via OpenReview Portal
               </a>
             </div>
           </div>

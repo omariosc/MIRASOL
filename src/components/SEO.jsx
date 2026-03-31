@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SITE_NAME = 'MIRASOL Workshop | MICCAI 2026'
-const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building Inclusive and Efficient AI Technologies for Medical Imaging in Resource-Constrained Settings.'
+const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.'
 
 const pageMeta = {
   '/': {
@@ -15,7 +15,7 @@ const pageMeta = {
   },
   '/how-to-submit': {
     title: 'How to Submit | MIRASOL Workshop - MICCAI 2026',
-    description: 'Submission guidelines for the MIRASOL Workshop at MICCAI 2026. Springer LNCS format, double-blind review, 8-page papers. Submit via Microsoft CMT portal.',
+    description: 'Submission guidelines for the MIRASOL Workshop at MICCAI 2026. Springer LNCS format, double-blind review, 8-page papers. Submit via OpenReview.net portal.',
   },
   '/nextgen-interchange': {
     title: 'NextGen Interchange | MIRASOL Workshop - MICCAI 2026',
