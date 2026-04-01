@@ -22,6 +22,7 @@ export const committeeSections = [
       { name: 'Pamela Guevara, PhD', affiliation: 'Universidad de Concepción, Chile', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/8a47d081-0496-4dd9-a2e6-113a18b7ff61/fd8e3c95-dc80-4542-a703-304644d4985e.jpeg' },
       { name: 'Miguel Lopez-Perez', affiliation: 'University of Granada, Spain', photo: SUNFLOWER },
       { name: 'Maruf Adewole, PhD', affiliation: 'MAI Lab, Nigeria', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/8a47d081-0496-4dd9-a2e6-113a18b7ff61/255f02f0-01f8-42ff-88ac-ca16115b1ef2.jpeg' },
+      { name: 'Natasha Lepore, PhD', affiliation: 'USC, USA', photo: 'https://api.fourwaves.com/api/files/serve/f4b20f5a-4d5a-4b4c-96d6-d6e1b19e2be0' },
     ]
   },
   {
@@ -38,7 +39,6 @@ export const committeeSections = [
       { name: 'Marius George Linguraru, PhD', role: 'Chair', affiliation: "Children's National Hospital, USA", photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/37c0a6a6-0e0e-4a53-a90d-19881ec59991.jpeg' },
       { name: 'Charles Delahunt, PhD', role: 'Co-Chair', affiliation: 'Global Health Labs, Seattle, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/027f49ea-5aa1-4e78-b7bb-fa9d26b7a32f.jpeg' },
       { name: 'Andrea Lara, PhD', role: 'Co-Chair', affiliation: 'Universidad Galileo, Guatemala', photo: 'https://api.fourwaves.com/api/files/serve/56795c3e-b184-4eaa-a0fe-883ef28f2243' },
-      { name: 'Natasha Lepore, PhD', affiliation: 'USC, USA', photo: 'https://api.fourwaves.com/api/files/serve/f4b20f5a-4d5a-4b4c-96d6-d6e1b19e2be0' },
       { name: 'Esther Puyol Anton, PhD', affiliation: 'RISE / HeartFlow, UK', photo: 'https://api.fourwaves.com/api/files/serve/552dde2a-ccbb-4b77-91e6-7966bea0c43e' },
       { name: 'Qingjie Meng', affiliation: 'University of Birmingham / RISE, UK', photo: SUNFLOWER },
       { name: 'Olawale Ajose', affiliation: 'Market Access Africa', photo: SUNFLOWER },
