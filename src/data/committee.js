@@ -1,3 +1,5 @@
+import { img } from '../utils'
+
 const SUNFLOWER = 'https://cdn.fourwaves.com/static/media/speakercontent/a571ad53-1984-495c-b239-01f9a3cb1175/43af4dcd-3b4b-41df-a4df-618c89994339.png'
 
 export const committeeSections = [
@@ -16,8 +18,8 @@ export const committeeSections = [
     members: [
       { name: 'Mehmet Kurt, PhD', role: 'Chair', affiliation: 'University of Washington, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/e3d9db3d-b077-47e3-9529-c1d5e9b2a411/8318c9e4-feee-43ac-9e65-d56d4b8167a7.jpeg' },
       { name: 'Dong Zhang, MSc', role: 'Co-Chair', affiliation: 'University of British Columbia, Canada', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/8a47d081-0496-4dd9-a2e6-113a18b7ff61/e6dd48ec-cf7b-4054-8562-9a7144f44ca3.jpeg' },
-      { name: 'Tareen Dawood', role: 'Co-Chair, Keynote Speakers', affiliation: 'DTU, Denmark', photo: SUNFLOWER },
-      { name: 'Qingjie Meng', affiliation: 'University of Birmingham, UK', photo: SUNFLOWER },
+      { name: 'Tareen Dawood', role: 'Co-Chair, Keynote Speakers', affiliation: 'RISE-MICCAI / DTU, Denmark', photo: SUNFLOWER },
+      { name: 'Qingjie Meng', affiliation: 'RISE-MICCAI / University of Birmingham, UK', photo: SUNFLOWER },
       { name: 'Waqas Sultani, PhD', affiliation: 'Information Technology University, Pakistan', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/8a47d081-0496-4dd9-a2e6-113a18b7ff61/f329b100-b2b9-4e4a-a0e6-915218d1837b.jpeg' },
       { name: 'Pamela Guevara, PhD', affiliation: 'Universidad de Concepción, Chile', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/8a47d081-0496-4dd9-a2e6-113a18b7ff61/fd8e3c95-dc80-4542-a703-304644d4985e.jpeg' },
       { name: 'Miguel Lopez-Perez', affiliation: 'University of Granada, Spain', photo: SUNFLOWER },
@@ -29,7 +31,7 @@ export const committeeSections = [
     title: 'Publication Committee',
     members: [
       { name: 'Alessandro Crimi, PhD', role: 'Chair', affiliation: 'AGH University, Poland & AIMS, Ghana', photo: 'https://api.fourwaves.com/api/files/serve/aea7b109-7623-4497-b741-0917ace50e14' },
-      { name: 'Jin Kim', role: 'Co-Chair', affiliation: 'UCLA, USA', photo: SUNFLOWER },
+      { name: 'Jin Kim', role: 'Co-Chair', affiliation: 'UCLA, USA', photo: img('jin-kim.jpg') },
       { name: 'Xiaomeng Li, PhD', affiliation: 'Hong Kong University, China', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/e2e3a412-946f-41f5-9cef-281f57f6c5cf/d2391b8b-b6ce-46ad-9bec-60e7eb8cf51b.png' },
     ]
   },
@@ -37,10 +39,10 @@ export const committeeSections = [
     title: 'Sponsorship & Diversity Committee',
     members: [
       { name: 'Marius George Linguraru, PhD', role: 'Chair', affiliation: "Children's National Hospital, USA", photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/37c0a6a6-0e0e-4a53-a90d-19881ec59991.jpeg' },
-      { name: 'Charles Delahunt, PhD', role: 'Co-Chair', affiliation: 'Global Health Labs, Seattle, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/027f49ea-5aa1-4e78-b7bb-fa9d26b7a32f.jpeg' },
-      { name: 'Andrea Lara, PhD', role: 'Co-Chair', affiliation: 'Universidad Galileo, Guatemala', photo: 'https://api.fourwaves.com/api/files/serve/56795c3e-b184-4eaa-a0fe-883ef28f2243' },
-      { name: 'Esther Puyol Anton, PhD', affiliation: 'RISE / HeartFlow, UK', photo: 'https://api.fourwaves.com/api/files/serve/552dde2a-ccbb-4b77-91e6-7966bea0c43e' },
-      { name: 'Qingjie Meng', affiliation: 'University of Birmingham / RISE, UK', photo: SUNFLOWER },
+      { name: 'Charles Delahunt, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / Global Health Labs, Seattle, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/027f49ea-5aa1-4e78-b7bb-fa9d26b7a32f.jpeg' },
+      { name: 'Andrea Lara, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / Universidad Galileo, Guatemala', photo: 'https://api.fourwaves.com/api/files/serve/56795c3e-b184-4eaa-a0fe-883ef28f2243' },
+      { name: 'Esther Puyol Anton, PhD', affiliation: 'RISE-MICCAI / HeartFlow, UK', photo: 'https://api.fourwaves.com/api/files/serve/552dde2a-ccbb-4b77-91e6-7966bea0c43e' },
+      { name: 'Qingjie Meng', affiliation: 'RISE-MICCAI / University of Birmingham, UK', photo: SUNFLOWER },
       { name: 'Olawale Ajose', affiliation: 'Market Access Africa', photo: SUNFLOWER },
       { name: 'Tarisiro Matiza', affiliation: 'Market Access Africa', photo: SUNFLOWER },
     ]
@@ -63,7 +65,7 @@ export const committeeSections = [
   {
     title: 'Communication Committee',
     members: [
-      { name: 'Omar Choudhry, PhD', role: 'Co-Chair', affiliation: 'University of Leeds / RISE, UK', photo: SUNFLOWER },
+      { name: 'Omar Choudhry, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / University of Leeds, UK', photo: SUNFLOWER },
       { name: 'Juhi Tulsi, MD', affiliation: 'CAMERA, Canada', photo: 'https://api.fourwaves.com/api/files/serve/d622b4e0-26f3-408f-9f0c-1785f815ad3c' },
     ]
   },
