@@ -7,7 +7,7 @@ export default function HowToSubmit() {
       <header className="page-header">
         <div className="page-header__container">
           <h1 className="page-header__title">Submission Portal</h1>
-          <a
+          {/* <a
             className="btn-past-committees"
             href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/MIRASOL&referrer=%5BHomepage%5D(%2F)"
             target="_blank"
@@ -34,7 +34,13 @@ export default function HowToSubmit() {
               <polyline points="15 3 21 3 21 9" />
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
-          </a>
+          </a> */}
+          <span
+            className="btn-past-committees"
+            style={{ opacity: 0.5, pointerEvents: "none", cursor: "default" }}
+          >
+            TBA
+          </span>
         </div>
       </header>
 

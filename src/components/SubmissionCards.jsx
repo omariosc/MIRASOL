@@ -37,14 +37,20 @@ export default function SubmissionCards() {
                 textAlign: "center",
               }}
             >
-              <a
+              {/* <a
                 className="action-element -primary"
                 href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/MIRASOL&referrer=%5BHomepage%5D(%2F)"
                 target="_blank"
                 rel="noopener"
               >
                 Submit via OpenReview Portal
-              </a>
+              </a> */}
+              <span
+                className="action-element -primary"
+                style={{ opacity: 0.5, pointerEvents: "none", cursor: "default" }}
+              >
+                TBA
+              </span>
             </div>
           </div>
           <div className="focus-card -icon-inline">
