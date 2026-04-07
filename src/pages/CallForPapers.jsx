@@ -284,9 +284,8 @@ export default function CallForPapers() {
               ]}
             />
             <div className="notice">
-              <strong>Note:</strong> All dates are for 2026 and will be
-              announced soon. All deadlines are at 23:59 Anywhere on Earth
-              (AoE).
+              <strong>Note:</strong> All deadlines are at 23:59 Anywhere on
+              Earth (AoE).
             </div>
           </div>
         </div>

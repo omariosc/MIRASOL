@@ -31,7 +31,7 @@ function PastCommitteesModal({ open, onClose }) {
               <div className="modal-members">
                 {section.members.map((m, i) => (
                   <div key={i} className="modal-member">
-                    <img src={m.photo} alt={m.name} />
+                    <img src={m.photo} alt={m.name} loading="lazy" />
                     <div className="modal-member__info">
                       <span className="modal-member__name">{m.name}</span>
                       {m.role && <span className="modal-member__role">{m.role}</span>}
@@ -78,7 +78,7 @@ export default function OrganisingCommittee() {
               <div className="members-grid">
                 {section.members.map((m, i) => (
                   <div key={i} className="member-card">
-                    <img className="photo" src={m.photo} alt={m.name} />
+                    <img className="photo" src={m.photo} alt={m.name} loading="lazy" />
                     <span className="name">{m.name}</span>
                     {m.role && <span className="role">{m.role}</span>}
                     <span className="affiliation">{m.affiliation}</span>

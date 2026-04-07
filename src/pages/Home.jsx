@@ -84,6 +84,7 @@ export default function Home() {
                   src={img("welcome-graphic.png")}
                   alt=""
                   className="content-block-image__image"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -358,6 +359,7 @@ export default function Home() {
                 src={img("mirasol-2025.png")}
                 alt="MIRASOL 2025 — Daejeon, South Korea"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                loading="lazy"
               />
             </div>
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
@@ -365,6 +367,7 @@ export default function Home() {
                 src={img("divider-sponsors.png")}
                 alt="MIRASOL 2024 — Marrakesh, Morocco"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -390,7 +393,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("logo-miccai.png")} alt="MICCAI Society" />
+              <img src={img("logo-miccai.png")} alt="MICCAI Society" loading="lazy" />
             </a>
             <a
               href="https://rise-miccai.org/"
@@ -398,7 +401,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("sponsor-1.png")} alt="RISE MICCAI" />
+              <img src={img("sponsor-1.png")} alt="RISE MICCAI" loading="lazy" />
             </a>
             <a
               href="https://africai.org/"
@@ -406,7 +409,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("sponsor-2.jpeg")} alt="AFRICAI" />
+              <img src={img("sponsor-2.jpeg")} alt="AFRICAI" loading="lazy" />
             </a>
             {/* <div className="logos-block__item">
               <img src={img("sponsor-3.png")} alt="Fondation Pierre Fabre" />

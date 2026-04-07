@@ -17,7 +17,7 @@ export default function KeynoteSpeakers() {
           <div className="speakers-grid">
             {speakers.map((s, i) => (
               <div key={i} className="speaker-card">
-                <img src={img(s.photo)} alt={s.name} />
+                <img src={img(s.photo)} alt={s.name} loading="lazy" />
                 <div className="speaker-info">
                   <div className="speaker-name">{s.name}</div>
                   <div className="speaker-title">{s.title}</div>

@@ -33,9 +33,9 @@ export default function Footer() {
         <div className="footer__bottom">
           <span className="footer__copy">&copy; 2026 MIRASOL Workshop. All rights reserved.</span>
           <div className="footer__bottom-logos">
-            <a href="https://www.cameramriafrica.org/" target="_blank" rel="noopener noreferrer"><img src={img('logo-camera.png')} alt="CAMERA" /></a>
-            <a href="https://miccai.org/" target="_blank" rel="noopener noreferrer"><img src={img('logo-miccai.png')} alt="MICCAI" /></a>
-            <a href="https://rise-miccai.org/" target="_blank" rel="noopener noreferrer"><img src={img('sponsor-1.png')} alt="RISE MICCAI" className="footer__logo-rise" /></a>
+            <a href="https://www.cameramriafrica.org/" target="_blank" rel="noopener noreferrer"><img src={img('logo-camera.png')} alt="CAMERA" loading="lazy" /></a>
+            <a href="https://miccai.org/" target="_blank" rel="noopener noreferrer"><img src={img('logo-miccai.png')} alt="MICCAI" loading="lazy" /></a>
+            <a href="https://rise-miccai.org/" target="_blank" rel="noopener noreferrer"><img src={img('sponsor-1.png')} alt="RISE MICCAI" className="footer__logo-rise" loading="lazy" /></a>
           </div>
         </div>
       </div>
