@@ -29,7 +29,9 @@ jobs:
       - run: npm run build
 
       - name: Copy public assets to dist
-        run: cp -r public/images dist/images
+        run: |
+          cp -r public/images dist/images
+          cp public/CNAME dist/CNAME
 
       - uses: actions/upload-pages-artifact@v3
         with:
