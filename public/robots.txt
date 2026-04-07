@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirasol.rise-miccai.org/sitemap.xml

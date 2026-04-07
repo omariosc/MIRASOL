@@ -53,7 +53,7 @@ export default function Navigation() {
         <div className="website-navigation__wrapper">
           <div className="website-navigation__primary">
             <NavLink to="/" className="nav-logo" onClick={close}>
-              <img src={img('logo-mirasol.png')} alt="MIRASOL" />
+              <img src={img('logo-mirasol.webp')} alt="MIRASOL" />
             </NavLink>
             {/* Desktop nav — hidden on mobile via CSS */}
             <nav className="website-navigation-list">

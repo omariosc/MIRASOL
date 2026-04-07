@@ -31,7 +31,7 @@ export const committeeSections = [
     title: 'Publication Committee',
     members: [
       { name: 'Alessandro Crimi, PhD', role: 'Chair', affiliation: 'AGH University, Poland & AIMS, Ghana', photo: 'https://api.fourwaves.com/api/files/serve/aea7b109-7623-4497-b741-0917ace50e14' },
-      { name: 'Jin Kim', role: 'Co-Chair', affiliation: 'UCLA, USA', photo: img('jin-kim.jpg') },
+      { name: 'Jin Kim', role: 'Co-Chair', affiliation: 'UCLA, USA', photo: img('jin-kim.webp') },
       { name: 'Xiaomeng Li, PhD', affiliation: 'Hong Kong University, China', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/e2e3a412-946f-41f5-9cef-281f57f6c5cf/d2391b8b-b6ce-46ad-9bec-60e7eb8cf51b.png' },
     ]
   },

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-const SITE_NAME = 'MIRASOL Workshop | MICCAI 2026'
+const BASE_URL = 'https://mirasol.rise-miccai.org'
 const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.'
 
 const pageMeta = {
@@ -50,8 +50,13 @@ export default function SEO() {
     let descTag = document.querySelector('meta[name="description"]')
     if (descTag) descTag.setAttribute('content', meta.description)
 
+    // Update canonical URL
+    const canonicalUrl = `${BASE_URL}${pathname === '/' ? '/' : `/#${pathname}`}`
+    let canonical = document.querySelector('link[rel="canonical"]')
+    if (canonical) canonical.setAttribute('href', canonicalUrl)
+
     // Update OG tags
-    const ogTags = { 'og:title': meta.title, 'og:description': meta.description, 'og:url': window.location.href }
+    const ogTags = { 'og:title': meta.title, 'og:description': meta.description, 'og:url': canonicalUrl }
     Object.entries(ogTags).forEach(([prop, content]) => {
       let tag = document.querySelector(`meta[property="${prop}"]`)
       if (!tag) {
@@ -60,6 +65,13 @@ export default function SEO() {
         document.head.appendChild(tag)
       }
       tag.setAttribute('content', content)
+    })
+
+    // Update Twitter tags
+    const twitterTags = { 'twitter:title': meta.title, 'twitter:description': meta.description }
+    Object.entries(twitterTags).forEach(([name, content]) => {
+      let tag = document.querySelector(`meta[name="${name}"]`)
+      if (tag) tag.setAttribute('content', content)
     })
   }, [pathname])
 

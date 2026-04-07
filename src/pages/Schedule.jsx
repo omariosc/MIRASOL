@@ -89,7 +89,7 @@ export default function Schedule() {
           </div></div>
           <div style={{marginTop:'1.25rem'}}>
             <a
-              href={img('program-schedule.png')}
+              href={img('program-schedule.webp')}
               target="_blank"
               rel="noopener noreferrer"
               className="program-schedule-btn"

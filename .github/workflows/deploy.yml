@@ -32,6 +32,8 @@ jobs:
         run: |
           cp -r public/images dist/images
           cp public/CNAME dist/CNAME
+          cp public/sitemap.xml dist/sitemap.xml
+          cp public/robots.txt dist/robots.txt
 
       - uses: actions/upload-pages-artifact@v3
         with:

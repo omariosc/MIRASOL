@@ -18,21 +18,21 @@ export default function Home() {
       {/* Desktop hero */}
       <section className="hero hero--desktop">
         <div className="hero__bg">
-          <img src={img("abudhabi.jpg")} alt="Abu Dhabi skyline" />
+          <img src={img("abudhabi.webp")} alt="Abu Dhabi skyline" />
         </div>
         <div className="hero__content">
           <div className="hero__logos">
             <div className="hero__logo-left">
               <img
-                src={img("miccai-2026-primary.png")}
+                src={img("miccai-2026-primary.webp")}
                 alt="MICCAI 2026 - Abu Dhabi, United Arab Emirates"
               />
             </div>
             <div className="hero__logo-center">
-              <img src={img("sponsor-1.png")} alt="RISE MICCAI" />
+              <img src={img("sponsor-1.webp")} alt="RISE MICCAI" />
             </div>
             <div className="hero__logo-right">
-              <img src={img("logo-mirasol.png")} alt="MIRASOL Workshop" />
+              <img src={img("logo-mirasol.webp")} alt="MIRASOL Workshop" />
             </div>
           </div>
           <div className="hero__text">
@@ -48,7 +48,7 @@ export default function Home() {
       </section>
       {/* Mobile hero — single image, no overlays */}
       <div className="hero-mobile">
-        <img src={img("hero-mobile.jpg")} alt="MIRASOL Workshop at MICCAI 2026" />
+        <img src={img("hero-mobile.webp")} alt="MIRASOL Workshop at MICCAI 2026" />
       </div>
 
       {/* Keywords */}
@@ -81,10 +81,10 @@ export default function Home() {
                 style={{ "--aspect-ratio": 1.5 }}
               >
                 <img
-                  src={img("welcome-graphic.png")}
+                  src={img("welcome-graphic.webp")}
                   alt=""
                   className="content-block-image__image"
-                  loading="lazy"
+                  fetchpriority="high"
                 />
               </div>
             </div>
@@ -356,7 +356,7 @@ export default function Home() {
           <div className="focus-cards">
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
               <img
-                src={img("mirasol-2025.png")}
+                src={img("mirasol-2025.webp")}
                 alt="MIRASOL 2025 — Daejeon, South Korea"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
@@ -364,7 +364,7 @@ export default function Home() {
             </div>
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
               <img
-                src={img("divider-sponsors.png")}
+                src={img("divider-sponsors.webp")}
                 alt="MIRASOL 2024 — Marrakesh, Morocco"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
@@ -393,7 +393,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("logo-miccai.png")} alt="MICCAI Society" loading="lazy" />
+              <img src={img("logo-miccai.webp")} alt="MICCAI Society" loading="lazy" />
             </a>
             <a
               href="https://rise-miccai.org/"
@@ -401,7 +401,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("sponsor-1.png")} alt="RISE MICCAI" loading="lazy" />
+              <img src={img("sponsor-1.webp")} alt="RISE MICCAI" loading="lazy" />
             </a>
             <a
               href="https://africai.org/"
@@ -409,7 +409,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="logos-block__item"
             >
-              <img src={img("sponsor-2.jpeg")} alt="AFRICAI" loading="lazy" />
+              <img src={img("sponsor-2.webp")} alt="AFRICAI" loading="lazy" />
             </a>
             {/* <div className="logos-block__item">
               <img src={img("sponsor-3.png")} alt="Fondation Pierre Fabre" />
