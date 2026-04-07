@@ -219,18 +219,25 @@ export default function CallForPapers() {
               </p>
               <ol>
                 <li>
-                  Submission Form: <strong>TBA</strong>
+                   <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScM3GNtpETWlRiaB9GBGUXIrVl7zLerYARPYHCaavXcQDhgFA/viewform"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Submission Form
+                  </a>
                 </li>
+                {/*
                 <li>
                   Instructions:{" "}
                   <a
-                    href="https://docs.google.com/document/d/16ULFFz5fR3TXU1NJZlvO3g2KRWU9K29ezcCboDBzU8g"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScM3GNtpETWlRiaB9GBGUXIrVl7zLerYARPYHCaavXcQDhgFA/viewform"
                     target="_blank"
                     rel="noopener"
                   >
                     Computing Resource Support Guidelines
                   </a>
-                </li>
+                </li> */}
                 <li>
                   During MIRASOL paper submission, select that you have applied
                   for computing resource support.
