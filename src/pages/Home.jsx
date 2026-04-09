@@ -399,17 +399,17 @@ export default function Home() {
               href="https://rise-miccai.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="logos-block__item"
+              className="logos-block__item logos-block__item--large"
             >
               <img src={img("sponsor-1.webp")} alt="RISE MICCAI" loading="lazy" />
             </a>
             <a
-              href="https://africai.org/"
+              href="https://camera.minciencias.gov.co/"
               target="_blank"
               rel="noopener noreferrer"
-              className="logos-block__item"
+              className="logos-block__item logos-block__item--large"
             >
-              <img src={img("sponsor-2.webp")} alt="AFRICAI" loading="lazy" />
+              <img src={img("sponsor-2.webp")} alt="CAMERA" loading="lazy" />
             </a>
             {/* <div className="logos-block__item">
               <img src={img("sponsor-3.png")} alt="Fondation Pierre Fabre" />

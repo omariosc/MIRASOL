@@ -760,7 +760,7 @@ a.focus-card.-link:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -771,8 +771,8 @@ a.focus-card.-link:hover {
   background: #fff;
   border: 1px solid var(--gray-200);
   border-radius: 0.75rem;
-  padding: 1rem 1.5rem;
-  height: 90px;
+  padding: 1.5rem 2rem;
+  height: 160px;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
@@ -790,11 +790,16 @@ a.logos-block__item::after,
 }
 
 .logos-block__item img {
-  max-height: 60px;
-  max-width: 120px;
+  max-height: 120px;
+  max-width: 240px;
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+.logos-block__item--large img {
+  max-height: 150px;
+  max-width: 300px;
 }
 
 /* ===== ACTION BUTTONS ===== */
@@ -2378,8 +2383,8 @@ a.logos-block__item::after,
   }
 
   .logos-block__item {
-    height: 75px;
-    padding: 0.75rem 1rem;
+    height: 130px;
+    padding: 1rem 1.25rem;
   }
 
   .keywords-section {
