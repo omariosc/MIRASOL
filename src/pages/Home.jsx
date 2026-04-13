@@ -260,7 +260,7 @@ export default function Home() {
               </svg>
               <h2>Important Dates</h2>
               <p>
-                <strong>Submission Portal Open:</strong> 15 April 2026
+                <strong>Submission Portal Open:</strong> 1 May 2026
               </p>
               <p>
                 <strong>Full Paper Submission Deadline:</strong> 15 July 2026

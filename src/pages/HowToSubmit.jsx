@@ -308,8 +308,8 @@ export default function HowToSubmit() {
                 items={[
                   {
                     label: "Submission Portal Open",
-                    value: "15 April 2026",
-                    date: "2026-04-15",
+                    value: "1 May 2026",
+                    date: "2026-05-01",
                   },
                   {
                     label: "Full Paper Submission Deadline",
