@@ -39,7 +39,7 @@ export const committeeSections = [
     title: 'Sponsorship & Diversity Committee',
     members: [
       { name: 'Marius George Linguraru, PhD', role: 'Chair', affiliation: "Children's National Hospital, USA", photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/37c0a6a6-0e0e-4a53-a90d-19881ec59991.jpeg' },
-      { name: 'Charles Delahunt, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / Global Health Labs, Seattle, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/027f49ea-5aa1-4e78-b7bb-fa9d26b7a32f.jpeg' },
+      { name: 'Charles Delahunt, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / University of Washington, Seattle, WA, USA', photo: img('delahunt.jpeg') },
       { name: 'Andrea Lara, PhD', role: 'Co-Chair', affiliation: 'RISE-MICCAI / Universidad Galileo, Guatemala', photo: 'https://api.fourwaves.com/api/files/serve/56795c3e-b184-4eaa-a0fe-883ef28f2243' },
       { name: 'Esther Puyol Anton, PhD', affiliation: 'RISE-MICCAI / HeartFlow, UK', photo: 'https://api.fourwaves.com/api/files/serve/552dde2a-ccbb-4b77-91e6-7966bea0c43e' },
       { name: 'Qingjie Meng', affiliation: 'RISE-MICCAI / University of Birmingham, UK', photo: SUNFLOWER },
@@ -130,7 +130,7 @@ export const committee2025Sections = [
     members: [
       { name: 'Natasha Lepore, PhD', role: 'Sponsorship Co-Chair', affiliation: "Children's Hospital Los Angeles, USA", photo: 'https://api.fourwaves.com/api/files/serve/f4b20f5a-4d5a-4b4c-96d6-d6e1b19e2be0' },
       { name: 'Marius George Linguraru, DPhil MA MSc', affiliation: "Children's National Hospital, Washington DC, USA", photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/37c0a6a6-0e0e-4a53-a90d-19881ec59991.jpeg' },
-      { name: 'Charles Delahunt, PhD', affiliation: 'Global Health Labs, Seattle, USA', photo: 'https://cdn.fourwaves.com/static/media/speakercontent/b604c3e8-862a-42c6-afda-465021a9703d/027f49ea-5aa1-4e78-b7bb-fa9d26b7a32f.jpeg' },
+      { name: 'Charles Delahunt, PhD', affiliation: 'University of Washington, Seattle, WA, USA', photo: img('delahunt.jpeg') },
       { name: 'Esther Puyol Anton, PhD', affiliation: 'HeartFlow, London, UK', photo: 'https://api.fourwaves.com/api/files/serve/552dde2a-ccbb-4b77-91e6-7966bea0c43e' },
     ]
   },
