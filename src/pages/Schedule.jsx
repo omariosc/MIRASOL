@@ -107,7 +107,7 @@ export default function Schedule() {
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Thematic Day Agenda</h2>
-            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>MICCAI 2026 venue in Strasbourg, France</strong>. Room: TBA.</p>
+            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place in <strong>Strasbourg, France</strong>. Room: TBA.</p>
           </div></div>
         </div>
       </div>

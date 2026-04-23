@@ -8,8 +8,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__col">
             <h3>Location</h3>
-            <p><strong>MICCAI 2026</strong></p>
-            <p>Strasbourg, France</p>
+            <p><strong>Strasbourg, France</strong></p>
             <p style={{ marginTop: '0.5rem', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem' }}>
               Venue details to be confirmed
             </p>
