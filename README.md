@@ -1,6 +1,6 @@
 # MIRASOL Workshop | MICCAI 2026
 
-Official website for the **MIRASOL** (Medical Image Computing in Resource Constrained Settings) Workshop at [MICCAI 2026](https://conferences.miccai.org/2026/), Abu Dhabi, UAE.
+Official website for the **MIRASOL** (Medical Image Computing in Resource Constrained Settings) Workshop at [MICCAI 2026](https://conferences.miccai.org/2026/), Strasbourg, France.
 
 **Live site:** [mirasol.rise-miccai.org](https://mirasol.rise-miccai.org/)
 

@@ -18,14 +18,14 @@ export default function Home() {
       {/* Desktop hero */}
       <section className="hero hero--desktop">
         <div className="hero__bg">
-          <img src={img("abudhabi.webp")} alt="Abu Dhabi skyline" />
+          <img src={img("abudhabi.webp")} alt="Strasbourg skyline" />
         </div>
         <div className="hero__content">
           <div className="hero__logos">
             <div className="hero__logo-left">
               <img
                 src={img("miccai-2026-primary.webp")}
-                alt="MICCAI 2026 - Abu Dhabi, United Arab Emirates"
+                alt="MICCAI 2026 - Strasbourg, France"
               />
             </div>
             <div className="hero__logo-center">
@@ -41,7 +41,7 @@ export default function Home() {
               Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
-              04 or 08 October 2026 &mdash; ADNEC Centre Abu Dhabi, UAE
+              27 September or 01 October 2026 &mdash; Strasbourg, France
             </p>
           </div>
         </div>
@@ -272,7 +272,7 @@ export default function Home() {
                 <strong>Camera-ready Submission:</strong> 03 September 2026
               </p>
               <p>
-                <strong>Workshop Date:</strong> 04 or 08 October 2026
+                <strong>Workshop Date:</strong> 27 September or 01 October 2026
               </p>
               {/* <p>
                 <strong>Proceedings Submission:</strong> TBC

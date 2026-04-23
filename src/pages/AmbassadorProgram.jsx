@@ -29,7 +29,7 @@ export default function AmbassadorProgram() {
               </div>
               <ul style={{ textAlign: 'left', color: 'var(--gray-600)', fontSize: '0.95rem', lineHeight: 1.6, paddingLeft: '0.2rem', margin: 0 }}>
                 <li>Open to early career researchers, postdoctoral fellows, graduate students and residents</li>
-                <li>Attending MICCAI 2026 in Abu Dhabi in person</li>
+                <li>Attending MICCAI 2026 in Strasbourg in person</li>
                 <li>Must be registered to attend MICCAI 2026 satellite events</li>
                 <li>Commit to present one poster in person during the assigned paper presentation</li>
               </ul>
@@ -97,7 +97,7 @@ export default function AmbassadorProgram() {
             { label: 'Call Opens', value: 'TBC' },
             { label: 'Call Closes', value: 'TBC' },
             { label: 'Notification and Matching', value: 'TBC' },
-            { label: 'Workshop Date', value: '04 or 08 October 2026', date: '2026-10-08' },
+            { label: 'Workshop Date', value: '27 September or 01 October 2026', date: '2026-10-01' },
           ]} />
         </div></div>
       </ScrollReveal>
@@ -109,7 +109,7 @@ export default function AmbassadorProgram() {
           <div className="faq-list">
             <div className="faq-item"><h4>Is the program open to students globally?</h4><p>Yes, any student attending MICCAI 2026 in person is eligible to apply, regardless of their country of origin.</p></div>
             <div className="faq-item"><h4>Do I need prior MICCAI experience?</h4><p>No prior experience is required. However, priority will be given to eligible individuals who have previous experience giving oral or poster presentations at MICCAI.</p></div>
-            <div className="faq-item"><h4>Can I participate remotely?</h4><p>No. Only in-person attendees qualify. The ambassador must be physically present at MICCAI 2026 in Abu Dhabi to present the poster.</p></div>
+            <div className="faq-item"><h4>Can I participate remotely?</h4><p>No. Only in-person attendees qualify. The ambassador must be physically present at MICCAI 2026 in Strasbourg to present the poster.</p></div>
             <div className="faq-item"><h4>Do I need to register for satellite events?</h4><p>Yes. Even those registered for the main conference must register separately for satellite events. Satellite event registration is required to participate as an ambassador.</p></div>
             <div className="faq-item"><h4>What are the poster presentation obligations?</h4><p>Ambassadors must collect the poster from the MIRASOL organizing committee and display it at the designated presentation area. Each ambassador commits to presenting one poster at the workshop on behalf of the matched author.</p></div>
             <div className="faq-item"><h4>What if I have travel restrictions?</h4><p>Applicants with travel restrictions should not apply. The program is designed to help authors who cannot attend, not attendees with restrictions. Only individuals who are confirmed to attend MICCAI 2026 in person should apply.</p></div>

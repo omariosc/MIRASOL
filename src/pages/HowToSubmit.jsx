@@ -328,8 +328,8 @@ export default function HowToSubmit() {
                   },
                   {
                     label: "Workshop Date",
-                    value: "04 or 08 October 2026",
-                    date: "2026-10-08",
+                    value: "27 September or 01 October 2026",
+                    date: "2026-10-01",
                   },
                   // { label: "Workshop Proceedings Submission", value: "TBC" },
                 ]}

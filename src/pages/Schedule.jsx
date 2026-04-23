@@ -11,7 +11,7 @@ function formatTime(iso) {
 function buildICS() {
   const lines = [
     'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//MIRASOL Workshop//Schedule//EN',
-    'CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:MIRASOL Workshop 2026','X-WR-TIMEZONE:Asia/Dubai',
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:MIRASOL Workshop 2026','X-WR-TIMEZONE:Europe/Paris',
   ]
   scheduleItems.filter(i => i.category !== 'break').forEach(item => {
     const s = new Date(item.startTime).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
@@ -66,13 +66,13 @@ export default function Schedule() {
 
   const openGoogle = (e) => {
     e.preventDefault()
-    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('MIRASOL Workshop - MICCAI 2026')}&dates=20261015T080000/20261015T180000&ctz=Asia/Dubai&location=${encodeURIComponent(LOCATION)}&details=${encodeURIComponent('MIRASOL: Medical Image Computing in Resource Constrained Settings Workshop\n\nFull schedule: '+window.location.href)}`
+    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('MIRASOL Workshop - MICCAI 2026')}&dates=20261001T080000/20261001T180000&ctz=Europe/Paris&location=${encodeURIComponent(LOCATION)}&details=${encodeURIComponent('MIRASOL: Medical Image Computing in Resource Constrained Settings Workshop\n\nFull schedule: '+window.location.href)}`
     window.open(url,'_blank'); setCalOpen(false)
   }
 
   const openOutlook = (e) => {
     e.preventDefault()
-    const url = `https://outlook.live.com/calendar/0/action/compose?subject=${encodeURIComponent('MIRASOL Workshop - MICCAI 2026')}&startdt=${encodeURIComponent('2026-10-15T08:00:00+04:00')}&enddt=${encodeURIComponent('2026-10-15T18:00:00+04:00')}&location=${encodeURIComponent(LOCATION)}&body=${encodeURIComponent('MIRASOL Workshop\n\nFull schedule: '+window.location.href)}`
+    const url = `https://outlook.live.com/calendar/0/action/compose?subject=${encodeURIComponent('MIRASOL Workshop - MICCAI 2026')}&startdt=${encodeURIComponent('2026-10-01T08:00:00+02:00')}&enddt=${encodeURIComponent('2026-10-01T18:00:00+02:00')}&location=${encodeURIComponent(LOCATION)}&body=${encodeURIComponent('MIRASOL Workshop\n\nFull schedule: '+window.location.href)}`
     window.open(url,'_blank'); setCalOpen(false)
   }
 
@@ -107,7 +107,7 @@ export default function Schedule() {
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Thematic Day Agenda</h2>
-            <p>All times are in Gulf Standard Time (GST, UTC+4). The workshop takes place at <strong>ADNEC Centre Abu Dhabi</strong>. Room: TBA.</p>
+            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>MICCAI 2026 venue in Strasbourg, France</strong>. Room: TBA.</p>
           </div></div>
         </div>
       </div>

@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const BASE_URL = 'https://mirasol.rise-miccai.org'
-const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Abu Dhabi, UAE. Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.'
+const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Strasbourg, France. Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.'
 
 const pageMeta = {
   '/': {
-    title: 'MIRASOL Workshop | MICCAI 2026 - Abu Dhabi, UAE',
+    title: 'MIRASOL Workshop | MICCAI 2026 - Strasbourg, France',
     description: BASE_DESCRIPTION,
   },
   '/call-for-papers': {
@@ -23,7 +23,7 @@ const pageMeta = {
   },
   '/ambassador-program': {
     title: 'Ambassador Program | MIRASOL Workshop - MICCAI 2026',
-    description: 'MIRASOL Ambassador Program at MICCAI 2026 Abu Dhabi. Present research on behalf of LMIC authors who cannot attend. Support inclusive research dissemination.',
+    description: 'MIRASOL Ambassador Program at MICCAI 2026 Strasbourg. Present research on behalf of LMIC authors who cannot attend. Support inclusive research dissemination.',
   },
   '/organising-committee': {
     title: 'Organising Committee | MIRASOL Workshop - MICCAI 2026',
@@ -31,7 +31,7 @@ const pageMeta = {
   },
   '/schedule': {
     title: 'Schedule & Program | MIRASOL Workshop - MICCAI 2026',
-    description: 'Full schedule for the MIRASOL Workshop thematic day at MICCAI 2026, Abu Dhabi. Joint sessions with AFRICAI and Tuberc Challenge. Keynotes, paper presentations, poster sessions, and NextGen Interchange.',
+    description: 'Full schedule for the MIRASOL Workshop thematic day at MICCAI 2026, Strasbourg. Joint sessions with AFRICAI and Tuberc Challenge. Keynotes, paper presentations, poster sessions, and NextGen Interchange.',
   },
   '/keynote-speakers': {
     title: 'Keynote Speakers | MIRASOL Workshop - MICCAI 2026',
