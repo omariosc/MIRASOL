@@ -1,6 +1,6 @@
 export const EVENT_DATE = '2026-10-01'
 export const TIMEZONE = 'Europe/Paris'
-export const LOCATION = 'Strasbourg, France'
+export const LOCATION = 'Strasbourg Convention Center, France'
 
 export const sections = [
   { id: 'se-i', title: 'SE I: Tuberc Challenges (8:00 – 10:00)' },
