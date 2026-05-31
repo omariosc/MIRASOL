@@ -172,35 +172,47 @@ export default function CallForPapers() {
               <p>
                 To provide an opportunity for exceptional LMICs researchers from
                 under-represented regions to participate in this workshop and
-                contribute their research, we are actively seeking funding to
-                supplement MICCAI registration costs, provide travel stipends
-                and best paper awards. Our sponsorship committee comprising
-                members who have a track record in securing funding to support
-                participation of underrepresented groups at MICCAI will continue
-                this outreach effort to ensure that under-represented groups are
-                able to share and learn from this workshop and other events at
-                MICCAI.
+                contribute their research, a limited number of travel grants
+                will be provided to authors with accepted workshop papers to
+                supplement conference registration fees, accommodations, and
+                flight costs.
               </p>
               <p>
-                <strong>How to apply: TBA</strong>
+                <strong>Eligibility:</strong>
               </p>
-              {/* <ol>
+              <ul>
                 <li>
-                  Complete the{" "}
-                  <a
-                    href="https://conferences.miccai.org/2026/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    MICCAI Travel Award application
-                  </a>{" "}
-                  on the MICCAI 2026 website.
+                  Applicants must submit a paper to the MIRASOL workshop by 1
+                  July 2026.
                 </li>
                 <li>
-                  During paper submission, select that you have applied for the
-                  travel award.
+                  Be either a current student, postdoctoral trainee,
+                  resident/fellow, or an early-career scientist.
                 </li>
-              </ol> */}
+                <li>
+                  Study or work in a low- and middle-income country or
+                  under-represented region.
+                </li>
+              </ul>
+              <p>
+                <strong>How to apply:</strong> Complete the{" "}
+                <a
+                  href="https://www.surveymonkey.com/r/MICCAI2026TravelGrantApplication"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  travel grant application
+                </a>
+                . For more information, see the{" "}
+                <a
+                  href="https://conferences.miccai.org/2026/en/GRANTS-AND-AWARDS.html"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  MICCAI 2026 Grants and Awards page
+                </a>
+                .
+              </p>
             </div>
             <div className="rte" style={{ marginTop: "1.5rem" }}>
               <h3>Computing Resource Support</h3>
