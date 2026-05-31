@@ -290,8 +290,8 @@ export default function CallForPapers() {
                 },
                 {
                   label: "Workshop Date",
-                  value: "27 September or 01 October 2026",
-                  date: "2026-10-01",
+                  value: "27 September 2026",
+                  date: "2026-09-27",
                 },
               ]}
             />

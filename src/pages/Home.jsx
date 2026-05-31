@@ -41,7 +41,7 @@ export default function Home() {
               Imaging in Resource-Constrained Settings
             </h1>
             <p className="hero__date">
-              27 September or 01 October 2026 &mdash; Strasbourg Convention Center, France
+              27 September 2026 &mdash; Strasbourg Convention Center, France
             </p>
           </div>
         </div>
@@ -272,7 +272,7 @@ export default function Home() {
                 <strong>Camera-ready Submission:</strong> 03 September 2026
               </p>
               <p>
-                <strong>Workshop Date:</strong> 27 September or 01 October 2026
+                <strong>Workshop Date:</strong> 27 September 2026
               </p>
               {/* <p>
                 <strong>Proceedings Submission:</strong> TBC
