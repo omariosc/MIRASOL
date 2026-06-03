@@ -6,7 +6,7 @@ export const sections = [
   { id: 'se-i', title: 'SE I: Tuberc Challenges (8:00 – 10:00)' },
   { id: 'break-1', title: 'Break' },
   { id: 'se-ii', title: 'SE II: AFRICAI (10:30 – 14:30)' },
-  { id: 'se-iii', title: 'SE III: MIRASOL-RISE Workshop (14:30 – 18:00)' },
+  { id: 'se-iii', title: 'SE III: RISE-MIRASOL Workshop (14:30 – 18:00)' },
 ]
 
 export const scheduleItems = [
@@ -87,7 +87,7 @@ export const scheduleItems = [
     label: 'SE II',
     labelClass: '-session',
   },
-  // SE III: MIRASOL-RISE Workshop
+  // SE III: RISE-MIRASOL Workshop
   {
     id: 8,
     section: 'se-iii',
