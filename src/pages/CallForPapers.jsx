@@ -274,6 +274,11 @@ export default function CallForPapers() {
                   date: "2026-05-01",
                 },
                 {
+                  label: "Travel Award Consideration Deadline",
+                  value: "1 July 2026",
+                  date: "2026-07-01",
+                },
+                {
                   label: "Full Paper Submission Deadline",
                   value: "15 July 2026",
                   date: "2026-07-15",

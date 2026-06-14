@@ -190,6 +190,18 @@ export default function HowToSubmit() {
             <div className="rte">
               <h2>Templates &amp; Resources</h2>
               <p>
+                Watch the{" "}
+                <a
+                  href="https://youtu.be/pMRXEMhZoj0"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  COMPASS video tutorial on how to write and submit your
+                  manuscript
+                </a>{" "}
+                for a step-by-step walkthrough of the submission process.
+              </p>
+              <p>
                 Papers must be submitted electronically as PDF files following
                 the{" "}
                 <a
@@ -304,6 +316,11 @@ export default function HowToSubmit() {
                     label: "Submission Portal Open",
                     value: "1 May 2026",
                     date: "2026-05-01",
+                  },
+                  {
+                    label: "Travel Award Consideration Deadline",
+                    value: "1 July 2026",
+                    date: "2026-07-01",
                   },
                   {
                     label: "Full Paper Submission Deadline",
