@@ -354,22 +354,34 @@ export default function Home() {
         <div className="content-block__container">
           <div className="rte" style={{ marginBottom: '1.25rem' }}><h2>Past Workshops</h2></div>
           <div className="focus-cards">
-            <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
+            <a
+              href="https://link.springer.com/book/9783032136534"
+              target="_blank"
+              rel="noopener"
+              title="MIRASOL 2025 proceedings — Daejeon, South Korea"
+              style={{ borderRadius: '0.75rem', overflow: 'hidden', display: 'block' }}
+            >
               <img
                 src={img("mirasol-2025.webp")}
                 alt="MIRASOL 2025 — Daejeon, South Korea"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />
-            </div>
-            <div style={{ borderRadius: '0.75rem', overflow: 'hidden' }}>
+            </a>
+            <a
+              href="https://doi.org/10.1007/978-3-031-79103-1"
+              target="_blank"
+              rel="noopener"
+              title="MIRASOL 2024 proceedings — Marrakesh, Morocco"
+              style={{ borderRadius: '0.75rem', overflow: 'hidden', display: 'block' }}
+            >
               <img
                 src={img("divider-sponsors.webp")}
                 alt="MIRASOL 2024 — Marrakesh, Morocco"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 loading="lazy"
               />
-            </div>
+            </a>
           </div>
         </div>
       </ScrollReveal>
@@ -407,7 +419,7 @@ export default function Home() {
               href="https://camera.minciencias.gov.co/"
               target="_blank"
               rel="noopener noreferrer"
-              className="logos-block__item logos-block__item--large"
+              className="logos-block__item logos-block__item--camera"
             >
               <img src={img("sponsor-2.webp")} alt="CAMERA" loading="lazy" />
             </a>

@@ -802,6 +802,12 @@ a.logos-block__item::after,
   max-width: 300px;
 }
 
+/* CAMERA/AfricAI mark is near-square — cap height so it fits the card like the others */
+.logos-block__item--camera img {
+  max-height: 132px;
+  max-width: 165px;
+}
+
 /* ===== ACTION BUTTONS ===== */
 .action-element {
   display: inline-flex;
@@ -1381,6 +1387,22 @@ a.logos-block__item::after,
 .dates-tl-item.-past .dates-tl-value {
   text-decoration: line-through;
   color: var(--gray-400);
+}
+
+/* Next upcoming deadline — urgency highlight */
+.dates-tl-item.-next .dates-tl-dot {
+  background: #d92d20;
+  border-color: #fde0dd;
+  box-shadow: 0 0 0 3px rgba(217, 45, 32, 0.15);
+}
+
+.dates-tl-item.-next .dates-tl-card {
+  border-color: #f5c2bd;
+}
+
+.dates-tl-item.-next .dates-tl-label,
+.dates-tl-item.-next .dates-tl-value {
+  color: #d92d20;
 }
 
 .session-label.-keynote {
