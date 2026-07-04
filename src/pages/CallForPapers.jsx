@@ -182,13 +182,8 @@ export default function CallForPapers() {
               </p>
               <ul>
                 <li>
-                  The travel grant application must be submitted by 1 July
-                  2026.
-                </li>
-                <li>
-                  A paper must be submitted to the MIRASOL workshop by{" "}
-                  <strong>15 July 2026</strong> and be accepted following
-                  review.
+                  Applicants must submit a paper to the MIRASOL workshop by 1
+                  July 2026.
                 </li>
                 <li>
                   Be either a current student, postdoctoral trainee,

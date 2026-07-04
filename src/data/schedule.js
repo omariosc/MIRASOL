@@ -1,6 +1,6 @@
 export const EVENT_DATE = '2026-09-27'
 export const TIMEZONE = 'Europe/Paris'
-export const LOCATION = 'Strasbourg Convention Center, France'
+export const LOCATION = 'Dome 1 at Etoile (U), Strasbourg Convention Center, France'
 
 export const sections = [
   { id: 'se-i', title: 'SE I: Tuberc Challenges (8:00 – 10:00)' },
@@ -94,8 +94,8 @@ export const scheduleItems = [
     category: 'keynote',
     startTime: '2026-09-27T14:30:00+02:00',
     endTime: '2026-09-27T14:50:00+02:00',
-    title: 'Keynote: Talk Title (TBA)',
-    speaker: 'Speaker TBA',
+    title: 'Keynote: Challenges and Opportunities in Ultra-Low Field MRI',
+    speaker: 'François Rousseau (IMT Atlantique)',
     label: 'Keynote',
     labelClass: '-keynote',
   },
@@ -148,8 +148,8 @@ export const scheduleItems = [
     category: 'special',
     startTime: '2026-09-27T17:00:00+02:00',
     endTime: '2026-09-27T17:30:00+02:00',
-    title: 'RISE-MIRASOL: Federating Collaborative ML Health Solutions for RCS',
-    speaker: 'Omar Choudhry',
+    title: 'TBC',
+    speaker: 'TBC',
     label: 'RISE-MIRASOL',
     labelClass: '-special',
   },
