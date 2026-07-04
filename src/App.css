@@ -1134,33 +1134,6 @@ a.logos-block__item::after,
   line-height: 1.6;
 }
 
-.speaker-card .speaker-linkedin {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-top: 1rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 0.4rem;
-  background: #fff;
-  border: 1px solid var(--gray-200);
-  color: var(--gray-800);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.speaker-card .speaker-linkedin:hover {
-  background: var(--gray-50);
-  border-color: var(--gray-300);
-}
-
-.speaker-card .speaker-linkedin img {
-  width: 18px;
-  height: 18px;
-  display: block;
-}
-
 /* ===== SCHEDULE TIMELINE ===== */
 .schedule-timeline {
   position: relative;
@@ -1238,6 +1211,7 @@ a.logos-block__item::after,
   vertical-align: middle;
   margin-left: 0.4rem;
   opacity: 0.9;
+  background-image: none;
   transition: opacity 0.2s;
 }
 

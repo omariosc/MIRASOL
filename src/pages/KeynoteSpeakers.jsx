@@ -3,7 +3,33 @@ import ScrollReveal from '../components/ScrollReveal'
 import { speakers } from '../data/speakers'
 import { img } from '../utils'
 
-function SpeakerCard({ s }) {
+// Rich 3rd-person bios (with inline links) for confirmed 2026 keynotes,
+// keyed by speaker name.
+const bios2026 = {
+  'François Rousseau': (
+    <>
+      François Rousseau is a Professor at{' '}
+      <a href="https://www.imt-atlantique.fr" target="_blank" rel="noopener noreferrer">
+        IMT Atlantique
+      </a>{' '}
+      and a researcher at the{' '}
+      <a href="http://latim.univ-brest.fr" target="_blank" rel="noopener noreferrer">
+        LaTIM
+      </a>{' '}
+      (Laboratoire de Traitement de l&rsquo;Information Médicale) in Brest,
+      France. His{' '}
+      <a href="https://rousseau.github.io/" target="_blank" rel="noopener noreferrer">
+        research
+      </a>{' '}
+      develops computational methods and machine learning for medical image
+      analysis, with applications to the neuro-musculoskeletal system and a
+      particular focus on early brain development.
+    </>
+  ),
+}
+
+function SpeakerCard({ s, bio }) {
+  const bioContent = bio || s.bio
   return (
     <div className="speaker-card">
       <img src={img(s.photo)} alt={s.name} loading="lazy" />
@@ -14,18 +40,7 @@ function SpeakerCard({ s }) {
         )}
         {s.title && <div className="speaker-title">{s.title}</div>}
         <div className="speaker-affiliation">{s.affiliation}</div>
-        {s.bio && <p className="speaker-bio">{s.bio}</p>}
-        {s.linkedin && (
-          <a
-            className="speaker-linkedin"
-            href={s.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={img('linkedin.webp')} alt="" width="18" height="18" />
-            LinkedIn
-          </a>
-        )}
+        {bioContent && <p className="speaker-bio">{bioContent}</p>}
       </div>
     </div>
   )
@@ -47,7 +62,7 @@ export default function KeynoteSpeakers() {
             </div>
             <div className="speakers-grid">
               {keynote2026.map((s, i) => (
-                <SpeakerCard key={i} s={s} />
+                <SpeakerCard key={i} s={s} bio={bios2026[s.name]} />
               ))}
             </div>
           </div>
