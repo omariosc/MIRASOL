@@ -96,6 +96,8 @@ export const scheduleItems = [
     endTime: '2026-09-27T14:50:00+02:00',
     title: 'Keynote: Challenges and Opportunities in Ultra-Low Field MRI',
     speaker: 'François Rousseau (IMT Atlantique)',
+    speakerPhoto: 'speaker-rousseau.webp',
+    speakerLinkedin: 'https://www.linkedin.com/in/fran%C3%A7ois-rousseau-b6339b7b/',
     label: 'Keynote',
     labelClass: '-keynote',
   },

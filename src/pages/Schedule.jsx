@@ -188,10 +188,30 @@ export default function Schedule() {
                         {state === 'active' && <span className="schedule-tl-dot__pulse" />}
                       </div>
                       <div className="schedule-tl-card">
-                        <div className="schedule-tl-time">{formatTime(item.startTime)} &ndash; {formatTime(item.endTime)}</div>
-                        <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
-                        {item.speaker && <p className="presenter">{item.speaker}</p>}
-                        {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
+                        <div className="schedule-tl-card__main">
+                          <div className="schedule-tl-time">{formatTime(item.startTime)} &ndash; {formatTime(item.endTime)}</div>
+                          <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
+                          {item.speaker && (
+                            <p className="presenter">
+                              {item.speaker}
+                              {item.speakerLinkedin && (
+                                <a
+                                  className="presenter-linkedin"
+                                  href={item.speakerLinkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  aria-label={`${item.speaker} on LinkedIn`}
+                                >
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 9.5h5.16V21H2.4V9.5zm7.63 0h4.95v1.57h.07c.69-1.24 2.38-2.55 4.9-2.55 5.24 0 6.2 3.3 6.2 7.59V21h-5.16v-4.35c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V21H10.03V9.5z"/></svg>
+                                </a>
+                              )}
+                            </p>
+                          )}
+                          {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
+                        </div>
+                        {item.speakerPhoto && (
+                          <img className="schedule-tl-avatar" src={img(item.speakerPhoto)} alt={item.speaker} loading="lazy" />
+                        )}
                       </div>
                     </div>
                   )

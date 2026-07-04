@@ -63,7 +63,9 @@ a:focus {
 a.btn-past-committees::after,
 a.program-schedule-btn::after,
 .speaker-linkedin::after,
-a.speaker-linkedin::after {
+a.speaker-linkedin::after,
+.presenter-linkedin::after,
+a.presenter-linkedin::after {
   display: none !important;
 }
 
@@ -1198,11 +1200,45 @@ a.logos-block__item::after,
 /* Card */
 .schedule-tl-card {
   flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   background: #fff;
   border: 1px solid var(--gray-100);
   border-radius: 0.6rem;
   padding: 0.85rem 1rem;
   transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.schedule-tl-card__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.schedule-tl-avatar {
+  flex-shrink: 0;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gray-100);
+}
+
+.presenter-linkedin {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  color: #0a66c2;
+  transition: color 0.2s;
+}
+
+.presenter-linkedin:hover {
+  color: #084d92;
+}
+
+.presenter-linkedin svg {
+  display: block;
 }
 
 .schedule-tl-card:hover {
@@ -2431,6 +2467,12 @@ a.logos-block__item::after,
   .logos-block__item {
     height: 130px;
     padding: 1rem 1.25rem;
+  }
+
+  /* Tall CAMERA/AfricAI mark: shrink on mobile so it clears the card edges */
+  .logos-block__item--camera img {
+    max-height: 92px;
+    max-width: 115px;
   }
 
   .keywords-section {
