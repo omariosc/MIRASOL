@@ -1,9 +1,8 @@
 export const speakers = [
   {
-    name: 'François Rousseau',
-    affiliation: 'IMT Atlantique',
-    talkTitle: 'Challenges and Opportunities in Ultra-Low Field MRI',
-    linkedin: 'https://www.linkedin.com/in/fran%C3%A7ois-rousseau-b6339b7b/',
+    name: 'François Rousseau, PhD',
+    title: 'Professor',
+    affiliation: 'IMT Atlantique, LaTIM (Laboratoire de Traitement de l\'Information Médicale), Brest, France',
     photo: 'speaker-rousseau.webp',
     edition: 2026,
   },

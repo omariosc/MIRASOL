@@ -6,7 +6,7 @@ import { img } from '../utils'
 // Rich 3rd-person bios (with inline links) for confirmed 2026 keynotes,
 // keyed by speaker name.
 const bios2026 = {
-  'François Rousseau': (
+  'François Rousseau, PhD': (
     <>
       François Rousseau is a Professor at{' '}
       <a href="https://www.imt-atlantique.fr" target="_blank" rel="noopener noreferrer">
@@ -35,9 +35,6 @@ function SpeakerCard({ s, bio }) {
       <img src={img(s.photo)} alt={s.name} loading="lazy" />
       <div className="speaker-info">
         <div className="speaker-name">{s.name}</div>
-        {s.talkTitle && (
-          <div className="speaker-title">&ldquo;{s.talkTitle}&rdquo;</div>
-        )}
         {s.title && <div className="speaker-title">{s.title}</div>}
         <div className="speaker-affiliation">{s.affiliation}</div>
         {bioContent && <p className="speaker-bio">{bioContent}</p>}
