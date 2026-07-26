@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: >-
+  MIRASOL workshop website, MICCAI 2026
+message: 'If you use this work, please cite it as below.'
+type: software
+authors:
+  - given-names: Omar
+    family-names: Choudhry
+    affiliation: School of Computing, University of Leeds
+    website: 'https://omarchoudhry.co.uk'
+repository-code: 'https://github.com/omariosc/MIRASOL'
+url: 'https://mirasol.rise-miccai.org/'
+abstract: >-
+  Official website for MIRASOL, the workshop on Medical Image Computing in
+  Resource Constrained Settings at MICCAI 2026 in Strasbourg, France, run in
+  partnership with RISE-MICCAI.
+keywords:
+  - miccai
+  - mirasol
+  - medical-imaging
+  - resource-constrained
+  - global-health
+  - workshop
+license: MIT
