@@ -272,8 +272,8 @@ export default function Home() {
                 <strong>Camera-ready Submission:</strong> 27 August 2026
               </p>
               <p>
-                <strong>Camera-ready Page Limit:</strong> 13 pages, including
-                references
+                <strong>Camera-ready Page Limit:</strong> 13 pages, plus
+                references and appendix
               </p>
               <p>
                 <strong>Workshop Date:</strong> 27 September 2026

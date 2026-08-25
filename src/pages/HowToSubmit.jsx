@@ -284,7 +284,9 @@ export default function HowToSubmit() {
               </p>
               <p>Required camera-ready submissions include:</p>
               <ol>
-                <li>Final paper (13 pages maximum, including references)</li>
+                <li>
+                  Final paper (13 pages maximum, plus references and appendix)
+                </li>
                 <li>Rebuttal letter addressing reviewer feedback</li>
                 <li>
                   Completed{" "}
