@@ -290,8 +290,8 @@ export default function CallForPapers() {
                 },
                 {
                   label: "Camera-ready Submission",
-                  value: "03 September 2026",
-                  date: "2026-09-03",
+                  value: "27 August 2026",
+                  date: "2026-08-27",
                 },
                 {
                   label: "Workshop Date",

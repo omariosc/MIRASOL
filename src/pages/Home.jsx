@@ -269,7 +269,11 @@ export default function Home() {
                 <strong>Notification of Acceptance:</strong> 15 August 2026
               </p>
               <p>
-                <strong>Camera-ready Submission:</strong> 03 September 2026
+                <strong>Camera-ready Submission:</strong> 27 August 2026
+              </p>
+              <p>
+                <strong>Camera-ready Page Limit:</strong> 13 pages, including
+                references
               </p>
               <p>
                 <strong>Workshop Date:</strong> 27 September 2026
@@ -314,6 +318,14 @@ export default function Home() {
                   MICCAI 2026 website
                 </a>
                 .
+              </p>
+              <p>
+                <strong>Visa support letters</strong> are available through the
+                main conference once you have registered. Alternatively, please{" "}
+                <a href="mailto:info.camera.mri@gmail.com">
+                  contact the workshop organizers
+                </a>{" "}
+                directly.
               </p>
             </div>
           </div>

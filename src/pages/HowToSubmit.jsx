@@ -284,10 +284,7 @@ export default function HowToSubmit() {
               </p>
               <p>Required camera-ready submissions include:</p>
               <ol>
-                <li>
-                  Final paper (8.5 pages maximum including figures/tables plus 2
-                  pages for references)
-                </li>
+                <li>Final paper (13 pages maximum, including references)</li>
                 <li>Rebuttal letter addressing reviewer feedback</li>
                 <li>
                   Completed{" "}
@@ -300,6 +297,20 @@ export default function HowToSubmit() {
                   </a>
                 </li>
               </ol>
+              <div className="notice">
+                <strong>Important:</strong> Camera-ready papers and all required
+                materials must be submitted by{" "}
+                <strong>27 August 2026</strong>. This is a firm deadline.
+              </div>
+              <p>
+                <strong>Visa support letters</strong> are available through the
+                main conference once you have registered for MICCAI 2026.
+                Alternatively, please{" "}
+                <a href="mailto:info.camera.mri@gmail.com">
+                  contact the workshop organizers
+                </a>{" "}
+                directly.
+              </p>
             </div>
           </div>
         </div>
@@ -334,8 +345,8 @@ export default function HowToSubmit() {
                   },
                   {
                     label: "Camera-ready Submission",
-                    value: "03 September 2026",
-                    date: "2026-09-03",
+                    value: "27 August 2026",
+                    date: "2026-08-27",
                   },
                   {
                     label: "Workshop Date",
