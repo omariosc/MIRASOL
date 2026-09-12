@@ -31,7 +31,7 @@ const pageMeta = {
   },
   '/schedule': {
     title: 'Schedule & Program | MIRASOL Workshop - MICCAI 2026',
-    description: 'Full schedule for the MIRASOL Workshop thematic day at MICCAI 2026, Strasbourg. Joint sessions with AFRICAI and Tuberc Challenge. Keynotes, paper presentations, poster sessions, and NextGen Interchange.',
+    description: 'Full schedule for the MIRASOL Workshop thematic day at MICCAI 2026, Strasbourg. Joint sessions with AFRICAI and the TREAT-MMTB challenge. Keynote by François Rousseau, oral presentations, poster sessions, and the NextGen Interchange.',
   },
   '/keynote-speakers': {
     title: 'Keynote Speakers | MIRASOL Workshop - MICCAI 2026',

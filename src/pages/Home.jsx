@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "../components/ScrollReveal";
+import Countdown from "../components/Countdown";
 import { img } from "../utils";
 
 const keywordsRow1 = [
@@ -49,6 +50,13 @@ export default function Home() {
       {/* Mobile hero — single image, no overlays */}
       <div className="hero-mobile">
         <img src={img("hero-mobile.webp")} alt="MIRASOL Workshop at MICCAI 2026" />
+      </div>
+
+      {/* Countdown to the workshop */}
+      <div className="countdown-band">
+        <div className="content-block__container">
+          <Countdown variant="home" />
+        </div>
       </div>
 
       {/* Keywords */}

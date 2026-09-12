@@ -10,7 +10,7 @@ export default function Footer() {
             <h3>Location</h3>
             <p><strong>Strasbourg Convention Center, France</strong></p>
             <p style={{ marginTop: '0.5rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem' }}>
-              Dome 1 at Etoile (U)
+              Room: Madrid 2 (G)
             </p>
           </div>
           <div className="footer__col">

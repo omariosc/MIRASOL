@@ -1,25 +1,39 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
-import { scheduleItems, sections, filterCategories, EVENT_DATE, LOCATION, TIMEZONE } from '../data/schedule'
+import Countdown from '../components/Countdown'
+import { scheduleItems, sections, filterCategories, EVENT_DATE, LOCATION, ROOM, TIMEZONE } from '../data/schedule'
 import { img } from '../utils'
 
 function formatTime(iso) {
   return new Date(iso).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: TIMEZONE })
 }
 
+function timeRange(item) {
+  if (item.startTime === item.endTime) return formatTime(item.startTime)
+  return `${formatTime(item.startTime)} – ${formatTime(item.endTime)}`
+}
+
+const esc = (s) => String(s).replace(/[\\;,]/g, (c) => '\\' + c)
+
 function buildICS() {
   const lines = [
     'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//MIRASOL Workshop//Schedule//EN',
     'CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:MIRASOL Workshop 2026','X-WR-TIMEZONE:Europe/Paris',
   ]
-  scheduleItems.filter(i => i.category !== 'break').forEach(item => {
-    const s = new Date(item.startTime).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
-    const e = new Date(item.endTime).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
-    lines.push('BEGIN:VEVENT',`UID:mirasol-${item.id}@mirasol-workshop.org`,`DTSTART:${s}`,`DTEND:${e}`,
-      `SUMMARY:${item.title.replace(/[\\;,]/g,c=>'\\'+c)}`,`LOCATION:${LOCATION.replace(/[\\;,]/g,c=>'\\'+c)}`,
-      item.speaker ? `DESCRIPTION:Presenter: ${item.speaker.replace(/[\\;,]/g,c=>'\\'+c)}` : null,'END:VEVENT')
-  })
+  scheduleItems
+    .filter(i => i.category !== 'break' && i.startTime !== i.endTime)
+    .forEach(item => {
+      const s = new Date(item.startTime).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
+      const e = new Date(item.endTime).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
+      const descParts = []
+      if (item.speaker) descParts.push(`Presenter: ${item.speaker}`)
+      if (item.paperId) descParts.push(`Paper ID: ${item.paperId}`)
+      if (item.details) descParts.push(...item.details)
+      lines.push('BEGIN:VEVENT',`UID:mirasol-${item.id}@mirasol-workshop.org`,`DTSTART:${s}`,`DTEND:${e}`,
+        `SUMMARY:${esc(item.title)}`,`LOCATION:${esc(LOCATION)}`,
+        descParts.length ? `DESCRIPTION:${esc(descParts.join(' | '))}` : null,'END:VEVENT')
+    })
   lines.push('END:VCALENDAR')
   return lines.filter(Boolean).join('\r\n')
 }
@@ -34,6 +48,7 @@ export default function Schedule() {
     const matchFilter = filter === 'all' || item.category === filter
     const q = search.toLowerCase()
     const matchSearch = !q || item.title.toLowerCase().includes(q) || (item.speaker||'').toLowerCase().includes(q)
+      || (item.details||[]).some(d => d.toLowerCase().includes(q))
     return matchFilter && matchSearch
   })
 
@@ -41,7 +56,7 @@ export default function Schedule() {
 
   const checkNow = useCallback(() => {
     const now = new Date()
-    const current = scheduleItems.find(i => now >= new Date(i.startTime) && now < new Date(i.endTime))
+    const current = scheduleItems.find(i => i.startTime !== i.endTime && now >= new Date(i.startTime) && now < new Date(i.endTime))
     setNowItem(current || null)
   }, [])
 
@@ -80,35 +95,14 @@ export default function Schedule() {
     <>
       <PageHeader title="Schedule" />
 
-      {/* Program at a Glance - commented out for now
-      <div className="content-block">
-        <div className="content-block__container">
-          <div className="text-block"><div className="rte">
-            <h2>Program-at-a-Glance</h2>
-            <p><strong>Joint Topic:</strong> Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.</p>
-          </div></div>
-          <div style={{marginTop:'1.25rem'}}>
-            <a
-              href={img('program-schedule.webp')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="program-schedule-btn"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-              View Program Schedule
-            </a>
-          </div>
-        </div>
-      </div>
-      */}
-
       {/* Schedule Intro */}
       <div className="content-block">
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Thematic Day Agenda</h2>
-            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>Strasbourg Convention Center, France</strong>. Room: <strong>Dome 1 at Etoile (U)</strong>.</p>
+            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>Strasbourg Convention Center, France</strong>. Room: <strong>{ROOM}</strong>.</p>
           </div></div>
+          <Countdown variant="schedule" />
         </div>
       </div>
 
@@ -129,7 +123,7 @@ export default function Schedule() {
             <div className="schedule-calendar-sync">
               <button className="schedule-calendar-btn" onClick={()=>setCalOpen(!calOpen)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                Sync to Calendar
+                Add to Calendar
               </button>
               {calOpen && (
                 <div className="schedule-calendar-dropdown">
@@ -179,43 +173,68 @@ export default function Schedule() {
           {visibleSections.map(sec => (
             <div key={sec.id} className="schedule-section">
               <h3 className="schedule-section__title">{sec.title}</h3>
+              {sec.chairs && (
+                <p className="schedule-section__chairs"><span>Chairs</span> {sec.chairs}</p>
+              )}
               <div className="schedule-timeline">
-                {filtered.filter(i => i.section === sec.id).map(item => {
-                  const state = getItemState(item)
-                  return (
-                    <div key={item.id} className={`schedule-tl-item -${state}${item.category==='break'?' -break':''}`}>
-                      <div className="schedule-tl-dot">
-                        {state === 'active' && <span className="schedule-tl-dot__pulse" />}
-                      </div>
-                      <div className="schedule-tl-card">
-                        <div className="schedule-tl-card__main">
-                          <div className="schedule-tl-time">{formatTime(item.startTime)} &ndash; {formatTime(item.endTime)}</div>
-                          <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
-                          {item.speaker && (
-                            <p className="presenter">
-                              {item.speaker}
-                              {item.speakerLinkedin && (
-                                <a
-                                  className="presenter-linkedin"
-                                  href={item.speakerLinkedin}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  aria-label={`${item.speaker} on LinkedIn`}
-                                >
-                                  <img src={img('linkedin.webp')} alt="LinkedIn" width="16" height="16" />
-                                </a>
-                              )}
-                            </p>
-                          )}
-                          {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
-                        </div>
-                        {item.speakerPhoto && (
-                          <img className="schedule-tl-avatar" src={img(item.speakerPhoto)} alt={item.speaker} loading="lazy" />
+                {(() => {
+                  let lastGroup = null
+                  return filtered.filter(i => i.section === sec.id).map(item => {
+                    const state = getItemState(item)
+                    const showGroup = item.group && item.group !== lastGroup
+                    if (item.group) lastGroup = item.group
+                    return (
+                      <div key={item.id}>
+                        {showGroup && (
+                          <div className="schedule-group">
+                            <h4 className="schedule-group__title">{item.group}</h4>
+                            {item.groupSubtitle && <p className="schedule-group__subtitle">{item.groupSubtitle}</p>}
+                            {item.groupChairs && <p className="schedule-group__chairs"><span>Chairs</span> {item.groupChairs}</p>}
+                          </div>
                         )}
+                        <div className={`schedule-tl-item -${state}${item.category==='break'?' -break':''}`}>
+                          <div className="schedule-tl-dot">
+                            {state === 'active' && <span className="schedule-tl-dot__pulse" />}
+                          </div>
+                          <div className="schedule-tl-card">
+                            <div className="schedule-tl-card__main">
+                              <div className="schedule-tl-time">{timeRange(item)}</div>
+                              <h4 className={item.category==='break'?'schedule-break-title':''}>{item.title}</h4>
+                              {item.speaker && (
+                                <p className="presenter">
+                                  {item.speaker}
+                                  {item.speakerLinkedin && (
+                                    <a
+                                      className="presenter-linkedin"
+                                      href={item.speakerLinkedin}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      aria-label={`${item.speaker} on LinkedIn`}
+                                    >
+                                      <img src={img('linkedin.webp')} alt="LinkedIn" width="16" height="16" />
+                                    </a>
+                                  )}
+                                </p>
+                              )}
+                              {item.details && (
+                                <ul className="schedule-tl-details">
+                                  {item.details.map((d, i) => <li key={i}>{d}</li>)}
+                                </ul>
+                              )}
+                              <div className="schedule-tl-tags">
+                                {item.label && <span className={`session-label ${item.labelClass||''}`}>{item.label}</span>}
+                                {item.paperId && <span className="schedule-tl-id">ID {item.paperId}</span>}
+                              </div>
+                            </div>
+                            {item.speakerPhoto && (
+                              <img className="schedule-tl-avatar" src={img(item.speakerPhoto)} alt={item.speaker} loading="lazy" />
+                            )}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  )
-                })}
+                    )
+                  })
+                })()}
               </div>
             </div>
           ))}

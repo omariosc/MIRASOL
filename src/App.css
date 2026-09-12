@@ -2623,3 +2623,246 @@ a.logos-block__item::after,
 .footer__links a:hover {
   background-image: none;
 }
+
+/* ===== SCHEDULE: CHAIRS, GROUPS, TAGS, DETAILS ===== */
+.schedule-section__chairs,
+.schedule-group__chairs {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin: 0.1rem 0 0.75rem;
+}
+
+.schedule-section__chairs span,
+.schedule-group__chairs span {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--theme-primary-dark);
+  margin-right: 0.45rem;
+}
+
+/* Sub-group header within a session (Oral Talks I/II, Next-Gen) */
+.schedule-group {
+  margin: 1.4rem 0 0.4rem;
+  padding-left: 0.1rem;
+}
+
+.schedule-group__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.schedule-group__title::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 2px;
+  background: var(--theme-primary);
+  flex-shrink: 0;
+}
+
+.schedule-group__subtitle {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  margin-top: 0.15rem;
+  line-height: 1.4;
+}
+
+.schedule-group__chairs {
+  margin: 0.2rem 0 0;
+}
+
+/* Tag row (session label + paper id) */
+.schedule-tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+}
+
+.schedule-tl-tags .session-label {
+  margin-top: 0;
+}
+
+.schedule-tl-id {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 100px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--gray-500);
+  background: var(--gray-100);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sub-talks list (e.g. 5MT Student Showcase) */
+.schedule-tl-details {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.schedule-tl-details li {
+  position: relative;
+  padding-left: 0.95rem;
+  font-size: 0.83rem;
+  color: var(--gray-600);
+  line-height: 1.45;
+}
+
+.schedule-tl-details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--theme-primary-light);
+}
+
+/* ===== COUNTDOWN ===== */
+.countdown-band {
+  padding: 0 1.5rem;
+  background: linear-gradient(180deg, hsl(44, 93%, 97%) 0%, #fff 100%);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.countdown-band .content-block__container {
+  padding: 2rem 0;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.countdown__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--theme-primary-dark);
+}
+
+.countdown__units {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 4.25rem;
+  padding: 0.7rem 0.5rem;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.65rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.countdown__num {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--theme-primary-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown__unit-label {
+  margin-top: 0.35rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+}
+
+.countdown.-message {
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.countdown__message {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--theme-primary-dark);
+  text-align: center;
+}
+
+.countdown__pulse {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: hsl(150, 60%, 45%);
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Compact variant on the Schedule page */
+.countdown.-schedule {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, hsl(44, 93%, 97%) 0%, #fff 100%);
+  border: 1px solid var(--gray-200);
+  border-radius: 0.75rem;
+}
+
+.countdown.-schedule .countdown__eyebrow {
+  margin-right: auto;
+}
+
+.countdown.-schedule .countdown__units {
+  gap: 0.5rem;
+}
+
+.countdown.-schedule .countdown__unit {
+  min-width: 3.4rem;
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.55rem;
+}
+
+.countdown.-schedule .countdown__num {
+  font-size: 1.5rem;
+}
+
+.countdown.-schedule.-message {
+  justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  .countdown__units {
+    gap: 0.5rem;
+  }
+  .countdown__unit {
+    min-width: 3.7rem;
+    padding: 0.6rem 0.4rem;
+  }
+  .countdown__num {
+    font-size: 1.65rem;
+  }
+  .countdown.-schedule .countdown__eyebrow {
+    margin-right: 0;
+    width: 100%;
+  }
+}
