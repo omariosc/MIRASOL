@@ -91,6 +91,77 @@ export default function Schedule() {
     window.open(url,'_blank'); setCalOpen(false)
   }
 
+  const downloadPDF = async () => {
+    // ASCII-safe text for jsPDF's built-in fonts (em/en dashes and curly quotes)
+    const ascii = (s) => String(s)
+      .replace(/[–—]/g, '-')
+      .replace(/[‘’]/g, "'")
+      .replace(/[“”]/g, '"')
+
+    // Compact 24-hour times for the printed agenda (matches the official programme)
+    const fmt24 = (iso) => new Date(iso).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZone: TIMEZONE })
+    const range24 = (item) => item.startTime === item.endTime ? fmt24(item.startTime) : `${fmt24(item.startTime)} - ${fmt24(item.endTime)}`
+
+    const { jsPDF } = await import('jspdf')
+    const autoTable = (await import('jspdf-autotable')).default
+
+    const doc = new jsPDF({ unit: 'pt', format: 'a4' })
+    const margin = 40
+
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(16)
+    doc.text('MIRASOL Workshop - MICCAI 2026', margin, 48)
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(11)
+    doc.text('Thematic Day Agenda', margin, 66)
+    doc.setFontSize(9.5)
+    doc.setTextColor(90)
+    doc.text(ascii('27 September 2026   |   ' + LOCATION), margin, 82)
+    doc.text('All times are in Central European Summer Time (CEST, UTC+2).', margin, 95)
+    doc.setTextColor(0)
+
+    const navy = [31, 78, 121]
+    const body = []
+    sections.forEach((sec) => {
+      body.push([{
+        content: ascii(sec.chairs ? `${sec.title}   |   Chairs: ${sec.chairs}` : sec.title),
+        colSpan: 3,
+        styles: { fillColor: navy, textColor: 255, fontStyle: 'bold', fontSize: 10 },
+      }])
+      let lastGroup = null
+      scheduleItems.filter((i) => i.section === sec.id).forEach((item) => {
+        if (item.group && item.group !== lastGroup) {
+          lastGroup = item.group
+          const parts = [item.group]
+          if (item.groupSubtitle) parts.push(item.groupSubtitle)
+          if (item.groupChairs) parts.push(`Chairs: ${item.groupChairs}`)
+          body.push([{
+            content: ascii(parts.join('   |   ')),
+            colSpan: 3,
+            styles: { fillColor: [235, 238, 244], textColor: navy, fontStyle: 'bold', fontSize: 9 },
+          }])
+        }
+        let session = item.category === 'keynote' ? `Keynote: ${item.title}` : item.title
+        if (item.details && item.details.length) {
+          session += '\n' + item.details.map((d) => '- ' + d).join('\n')
+        }
+        body.push([range24(item), ascii(session), ascii(item.speaker || '')])
+      })
+    })
+
+    autoTable(doc, {
+      startY: 108,
+      head: [['Time', 'Session', 'Speaker / Presenter']],
+      body,
+      margin: { left: margin, right: margin },
+      styles: { fontSize: 9, cellPadding: 4, valign: 'top', overflow: 'linebreak', lineColor: [220, 224, 230], lineWidth: 0.5 },
+      headStyles: { fillColor: navy, textColor: 255, fontStyle: 'bold' },
+      columnStyles: { 0: { cellWidth: 80 }, 2: { cellWidth: 150 } },
+    })
+
+    doc.save('mirasol-workshop-2026-agenda.pdf')
+  }
+
   return (
     <>
       <PageHeader title="Schedule" />
@@ -101,6 +172,7 @@ export default function Schedule() {
           <div className="text-block"><div className="rte">
             <h2>Thematic Day Agenda</h2>
             <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>Strasbourg Convention Center, France</strong>. Room: <strong>{ROOM}</strong>.</p>
+            <p>The MIRASOL poster session is held in the same room, using the wall space around the room.</p>
           </div></div>
           <Countdown variant="schedule" />
         </div>
@@ -120,7 +192,12 @@ export default function Schedule() {
                 <button key={c.key} className={`schedule-filter${filter===c.key?' active':''}`} onClick={()=>setFilter(c.key)}>{c.label}</button>
               ))}
             </div>
-            <div className="schedule-calendar-sync">
+            <div className="schedule-actions">
+              <button className="schedule-calendar-btn" onClick={downloadPDF}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF
+              </button>
+              <div className="schedule-calendar-sync">
               <button className="schedule-calendar-btn" onClick={()=>setCalOpen(!calOpen)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Add to Calendar
@@ -144,6 +221,7 @@ export default function Schedule() {
                   </a>
                 </div>
               )}
+            </div>
             </div>
           </div>
 

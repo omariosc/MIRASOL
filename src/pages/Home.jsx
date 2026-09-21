@@ -16,8 +16,8 @@ const keywordsRow2 = ["CT", "US", "EEG", "ECG", "X-ray", "Low-Resource", "Middle
 export default function Home() {
   return (
     <>
-      {/* Desktop hero */}
-      <section className="hero hero--desktop">
+      {/* Hero — composed banner (desktop shows all logos; mobile shows MIRASOL only) */}
+      <section className="hero">
         <div className="hero__bg">
           <img src={img("france.webp")} alt="Strasbourg, France" />
         </div>
@@ -47,10 +47,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Mobile hero — single image, no overlays */}
-      <div className="hero-mobile">
-        <img src={img("hero-mobile.webp")} alt="MIRASOL Workshop at MICCAI 2026" />
-      </div>
 
       {/* Countdown to the workshop */}
       <div className="countdown-band">
@@ -134,7 +130,8 @@ export default function Home() {
                 policy makers, regulators, and industry partners from around the
                 world who are working on translational ML solutions for
                 real-world medical imaging in RCS, with a focus on
-                underrepresented communities in the Middle East. This workshop
+                underrepresented communities across Africa, South Asia, Latin
+                America, and the Middle East. This workshop
                 builds on the successful{" "}
                 <a
                   href="https://event.fourwaves.com/miccaiafrica"

@@ -1630,10 +1630,17 @@ a.logos-block__item::after,
   color: #fff;
 }
 
+/* Actions group (Download PDF + Add to Calendar) */
+.schedule-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
 /* Calendar Sync */
 .schedule-calendar-sync {
   position: relative;
-  margin-left: auto;
 }
 
 .schedule-calendar-btn {
@@ -2230,27 +2237,6 @@ a.logos-block__item::after,
 }
 
 /* ===== MOBILE HERO ===== */
-.hero-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .hero--desktop {
-    display: none;
-  }
-
-  .hero-mobile {
-    display: block;
-    width: 100%;
-  }
-
-  .hero-mobile img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .text-block.-inline {
@@ -2298,22 +2284,20 @@ a.logos-block__item::after,
 
   .hero__logos {
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0.5rem;
     padding: 0 0.25rem;
     align-items: center;
   }
 
-  .hero__logo-left img {
-    height: 65px;
-  }
-
-  .hero__logo-center img {
-    height: 50px;
+  /* Mobile: show only the MIRASOL logo */
+  .hero__logo-left,
+  .hero__logo-center {
+    display: none;
   }
 
   .hero__logo-right img {
-    height: 50px;
+    height: 80px;
   }
 
   .hero__title {
@@ -2378,8 +2362,14 @@ a.logos-block__item::after,
     gap: 0.75rem;
   }
 
-  .schedule-calendar-sync {
+  .schedule-actions {
     order: 1;
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .schedule-calendar-sync {
     width: 100%;
     margin-left: 0;
   }
@@ -2703,7 +2693,7 @@ a.logos-block__item::after,
   font-variant-numeric: tabular-nums;
 }
 
-/* Sub-talks list (e.g. 5MT Student Showcase) */
+/* Sub-talks list (e.g. 3MT Student Showcase) */
 .schedule-tl-details {
   list-style: none;
   margin: 0.5rem 0 0;

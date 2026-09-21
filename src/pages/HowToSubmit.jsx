@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ScrollReveal from '../components/ScrollReveal'
 import DatesTimeline from '../components/DatesTimeline'
 
@@ -319,6 +320,46 @@ export default function HowToSubmit() {
       </ScrollReveal>
 
       <ScrollReveal className="content-block -alt">
+        <div className="content-block__container">
+          <div className="text-block">
+            <div className="rte">
+              <h2>Presenter Instructions</h2>
+              <p>
+                These instructions apply to authors of accepted papers
+                presenting at the workshop on <strong>27 September 2026</strong>{" "}
+                in <strong>Madrid 2 (G), Strasbourg Convention Center</strong>.
+              </p>
+              <h3>Oral Presenters</h3>
+              <p>
+                Please prepare your presentation slides ahead of the workshop.
+                The slide upload form will be shared here soon.
+              </p>
+              <h3>Poster Presenters</h3>
+              <p>
+                Prepare your poster and print it in{" "}
+                <strong>
+                  MICCAI format &mdash; portrait A0 (841 &times; 1189 mm / 33.1
+                  &times; 46.8 in)
+                </strong>
+                . The MIRASOL poster template will be shared here soon.
+              </p>
+              <p>
+                The MIRASOL poster session is held in the same room as the
+                workshop, using the wall space around the room.
+              </p>
+              <h3>Ambassador Posters</h3>
+              <p>
+                Presenters displaying a poster on behalf of a matched author
+                through the Ambassador Program must upload their poster ahead of
+                the workshop, following the instructions from the{" "}
+                <Link to="/ambassador-program">Ambassador Program</Link>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal className="content-block">
         <div className="content-block__container">
           <div className="text-block">
             <div className="rte">
