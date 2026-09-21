@@ -331,17 +331,34 @@ export default function HowToSubmit() {
               </p>
               <h3>Oral Presenters</h3>
               <p>
-                Please prepare your presentation slides ahead of the workshop.
-                The slide upload form will be shared here soon.
+                Please prepare your presentation slides ahead of the workshop
+                and upload them using the{" "}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfk1Tdg5zvImJBu-C-KoJXR4F2JFIzpPLhj-8HywIXnlPTkZg/viewform?usp=sharing&ouid=110786062609399287804"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  oral slides upload form
+                </a>
+                .
               </p>
               <h3>Poster Presenters</h3>
               <p>
-                Prepare your poster and print it in{" "}
+                Prepare your poster using the{" "}
+                <a
+                  href="https://docs.google.com/presentation/d/1sylO6lGSTsCuPwSqR_Yd5S5fYRgUxy20/edit?usp=sharing&ouid=110786062609399287804&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  MIRASOL poster template
+                </a>{" "}
+                and print it in{" "}
                 <strong>
                   MICCAI format &mdash; portrait A0 (841 &times; 1189 mm / 33.1
                   &times; 46.8 in)
                 </strong>
-                . The MIRASOL poster template will be shared here soon.
+                . The template is for both authors and Ambassadors presenting
+                onsite.
               </p>
               <p>
                 The MIRASOL poster session is held in the same room as the
@@ -350,8 +367,15 @@ export default function HowToSubmit() {
               <h3>Ambassador Posters</h3>
               <p>
                 Presenters displaying a poster on behalf of a matched author
-                through the Ambassador Program must upload their poster ahead of
-                the workshop, following the instructions from the{" "}
+                through the Ambassador Program should use the{" "}
+                <a
+                  href="https://docs.google.com/presentation/d/1sylO6lGSTsCuPwSqR_Yd5S5fYRgUxy20/edit?usp=sharing&ouid=110786062609399287804&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  poster template
+                </a>{" "}
+                above and follow the instructions from the{" "}
                 <Link to="/ambassador-program">Ambassador Program</Link>.
               </p>
             </div>
