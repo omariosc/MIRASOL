@@ -171,7 +171,8 @@ export default function Schedule() {
         <div className="content-block__container">
           <div className="text-block"><div className="rte">
             <h2>Thematic Day Agenda</h2>
-            <p>All times are in Central European Summer Time (CEST, UTC+2). The workshop takes place at the <strong>Strasbourg Convention Center, France</strong>. Room: <strong>{ROOM}</strong>.</p>
+            <p>All times are in Central European Summer Time (CEST, UTC+2).</p>
+            <p>The workshop takes place at the <strong>Strasbourg Convention Center, France</strong>. Room: <strong>{ROOM}</strong>.</p>
             <p>The MIRASOL poster session is held in the same room, using the wall space around the room.</p>
           </div></div>
           <Countdown variant="schedule" />
