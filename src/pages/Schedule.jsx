@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import Countdown from '../components/Countdown'
 import { scheduleItems, sections, filterCategories, EVENT_DATE, LOCATION, ROOM, TIMEZONE } from '../data/schedule'
+import { posters } from '../data/posters'
 import { img } from '../utils'
 
 function formatTime(iso) {
@@ -158,6 +159,30 @@ export default function Schedule() {
       headStyles: { fillColor: navy, textColor: 255, fontStyle: 'bold' },
       columnStyles: { 0: { cellWidth: 80 }, 2: { cellWidth: 150 } },
     })
+
+    // Poster presentations on a fresh page
+    if (posters.length) {
+      doc.addPage()
+      doc.setFont('helvetica', 'bold'); doc.setFontSize(14)
+      doc.text('Poster Presentations', margin, 48)
+      doc.setFont('helvetica', 'normal'); doc.setFontSize(9.5); doc.setTextColor(90)
+      doc.text(ascii(`${posters.length} posters  |  MIRASOL Poster Session & Networking (17:05 - 17:55)  |  ${ROOM}`), margin, 64)
+      doc.setTextColor(0)
+      autoTable(doc, {
+        startY: 76,
+        head: [['No.', 'ID', 'Title', 'Presenting Author & Affiliation']],
+        body: posters.map((p) => [
+          String(p.number),
+          String(p.paperId),
+          ascii(p.ambassador ? `${p.title}  [Ambassador Poster]` : p.title),
+          ascii(p.presenter),
+        ]),
+        margin: { left: margin, right: margin },
+        styles: { fontSize: 8, cellPadding: 3, valign: 'top', overflow: 'linebreak', lineColor: [220, 224, 230], lineWidth: 0.5 },
+        headStyles: { fillColor: navy, textColor: 255, fontStyle: 'bold' },
+        columnStyles: { 0: { cellWidth: 28, halign: 'center' }, 1: { cellWidth: 30 }, 3: { cellWidth: 150 } },
+      })
+    }
 
     doc.save('mirasol-workshop-2026-agenda.pdf')
   }
@@ -317,6 +342,45 @@ export default function Schedule() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Poster Presentations */}
+      <div className="content-block -alt" id="posters">
+        <div className="content-block__container">
+          <div className="rte" style={{ marginBottom: '1.25rem' }}>
+            <h2>Poster Presentations</h2>
+            <p>
+              {posters.length} posters will be presented during the <strong>MIRASOL Poster Session &amp; Networking</strong> (17:05&ndash;17:55) in <strong>{ROOM}</strong>, displayed on the wall space around the room. Posters are numbered for placement &mdash; please put your poster up at your assigned number.
+            </p>
+          </div>
+          <div className="poster-table-wrap">
+            <table className="poster-table">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Paper&nbsp;ID</th>
+                  <th>Title</th>
+                  <th>Presenting Author &amp; Affiliation</th>
+                </tr>
+              </thead>
+              <tbody>
+                {posters.map((p) => (
+                  <tr key={p.number}>
+                    <td className="poster-table__num">{p.number}</td>
+                    <td className="poster-table__id">{p.paperId}</td>
+                    <td>
+                      {p.title}
+                      {p.ambassador && (
+                        <span className="poster-ambassador-badge">Ambassador Poster{p.ambassador ? ` — ${p.ambassador}` : ''}</span>
+                      )}
+                    </td>
+                    <td>{p.presenter}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
