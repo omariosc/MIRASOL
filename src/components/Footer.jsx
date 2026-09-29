@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer__container">
         <div className="footer__grid">
           <div className="footer__col">
-            <h3>Location</h3>
+            <h3>2026 Venue</h3>
             <p><strong>Strasbourg Convention Center, France</strong></p>
             <p style={{ marginTop: '0.5rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem' }}>
               Room: Madrid 2 (G)
@@ -16,8 +16,6 @@ export default function Footer() {
           <div className="footer__col">
             <h3>Quick Links</h3>
             <ul className="footer__links">
-              <li><Link to="/call-for-papers">Call for Papers</Link></li>
-              <li><Link to="/how-to-submit">How to Submit</Link></li>
               <li><Link to="/schedule">Schedule</Link></li>
               <li><Link to="/keynote-speakers">Keynote Speakers</Link></li>
               <li><Link to="/organising-committee">Organising Committee</Link></li>

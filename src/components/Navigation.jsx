@@ -4,8 +4,6 @@ import { img } from '../utils'
 
 const navItems = [
   { to: '/', label: 'Home', icon: true },
-  { to: '/call-for-papers', label: 'Call for Papers' },
-  { to: '/how-to-submit', label: 'How to Submit' },
   { to: '/nextgen-interchange', label: 'NextGen Interchange' },
   { to: '/ambassador-program', label: 'Ambassador Program' },
   { to: '/organising-committee', label: 'Organising Committee' },

@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const BASE_URL = 'https://mirasol.rise-miccai.org'
-const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Strasbourg, France. Building and Sustaining Efficient Technologies for Medical Imaging in Resource-Constrained Settings.'
+const BASE_DESCRIPTION = 'MIRASOL - Medical Image Computing in Resource Constrained Settings Workshop & Knowledge Interchange at MICCAI 2026, Strasbourg, France. Thank you to everyone who participated; we hope to see you again next year.'
 
 const pageMeta = {
   '/': {
-    title: 'MIRASOL Workshop | MICCAI 2026 - Strasbourg, France',
+    title: 'Thank You | MIRASOL Workshop - MICCAI 2026',
     description: BASE_DESCRIPTION,
   },
   '/call-for-papers': {
@@ -30,8 +30,8 @@ const pageMeta = {
     description: 'Meet the MIRASOL Workshop organising committee - researchers, clinicians, and trainees from Africa, Asia, and around the world working on medical imaging in resource-constrained settings.',
   },
   '/schedule': {
-    title: 'Schedule & Program | MIRASOL Workshop - MICCAI 2026',
-    description: 'Full schedule for the MIRASOL Workshop thematic day at MICCAI 2026, Strasbourg. Joint sessions with AFRICAI and the TREAT-MMTB challenge. Keynote by François Rousseau, oral presentations, poster sessions, and the NextGen Interchange.',
+    title: '2026 Programme Archive | MIRASOL Workshop - MICCAI',
+    description: 'Browse the archived programme and 60 poster presentations from the MIRASOL–RISE workshop held at MICCAI 2026 in Strasbourg.',
   },
   '/keynote-speakers': {
     title: 'Keynote Speakers | MIRASOL Workshop - MICCAI 2026',

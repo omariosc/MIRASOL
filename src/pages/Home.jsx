@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Countdown to the workshop */}
+      {/* Post-workshop thank you */}
       <div className="countdown-band">
         <div className="content-block__container">
           <Countdown variant="home" />
@@ -126,13 +126,13 @@ export default function Home() {
             <div className="rte">
               <h3>Aim:</h3>
               <p>
-                The 3rd MIRASOL workshop will connect researchers, medical experts,
+                The 3rd MIRASOL workshop brought together researchers, medical experts,
                 policy makers, regulators, and industry partners from around the
-                world who are working on translational ML solutions for
+                world working on translational ML solutions for
                 real-world medical imaging in RCS, with a focus on
                 underrepresented communities across Africa, South Asia, Latin
                 America, and the Middle East. This workshop
-                builds on the successful{" "}
+                built on the successful{" "}
                 <a
                   href="https://event.fourwaves.com/miccaiafrica"
                   target="_blank"
@@ -152,7 +152,7 @@ export default function Home() {
                     <em>MIRASOL Workshop</em>
                   </strong>
                 </a>{" "}
-                in 2025 for the South Korea meeting. The 2026 Workshop, partners
+                in 2025 for the South Korea meeting. In 2026, MIRASOL partnered
                 with{" "}
                 <a
                   href="https://rise-miccai.org/"
@@ -164,9 +164,8 @@ export default function Home() {
                   </strong>
                 </a>
                 , a vibrant community of 1,400 LMIC members (40% women, and 90%
-                from diverse ethnic backgrounds), who up till now had no
-                dedicated workshop tailored to their needs. This year&rsquo;s
-                workshop will fill this gap, as well as continue to probe
+                from diverse ethnic backgrounds). The workshop addressed the
+                need for a dedicated event and continued to explore
                 medical imaging challenges in RCS, including but not limited to,
                 infrastructure, personnel, and funding resources.
               </p>
@@ -175,10 +174,10 @@ export default function Home() {
                 (e.g., accelerated imaging, low-resolution image enhancement,
                 denoising, missing sequences), improvement in human resources
                 (e.g., rapid diagnosis, reporting), and policy efforts for
-                translation of ML from concept to clinic in RCS will be
-                highlighted. The workshop will foster ML imaging innovations
+                translation of ML from concept to clinic in RCS. The workshop
+                fostered ML imaging innovations
                 that address the general challenge of fewer datasets in RCS and
-                inspire the wider MICCAI community to develop methods in a
+                encouraged the wider MICCAI community to develop methods in a
                 sustainability conscious, resource-efficient, and cost-effective
                 manner (do more with little).
               </p>
@@ -193,9 +192,8 @@ export default function Home() {
           <div className="rte" style={{ marginBottom: "1.5rem" }}>
             <h2>Workshop Focus Areas</h2>
             <p>
-              We are looking for papers that will be presented as
-              contributed talks. Specifically, we encourage contributions that
-              highlight issues related to:
+              The workshop welcomed contributions addressing the following
+              themes:
             </p>
           </div>
           <div className="focus-cards">
@@ -236,8 +234,8 @@ export default function Home() {
             </div>
           </div>
           <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-            <Link className="action-element -primary" to="/call-for-papers">
-              See Call for Papers
+            <Link className="action-element -primary" to="/schedule">
+              Explore the 2026 programme
             </Link>
           </div>
         </div>
@@ -263,29 +261,16 @@ export default function Home() {
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <h2>Important Dates</h2>
+              <h2>2026 Workshop Archive</h2>
               <p>
-                <strong>Submission Portal Open:</strong> 1 May 2026
+                The MIRASOL–RISE session took place on 27 September 2026 at
+                Strasbourg Convention Center, in Madrid 2 (G).
               </p>
               <p>
-                <strong>Full Paper Submission Deadline:</strong> 15 July 2026
+                Revisit the talks, keynote, Next-Gen Interchange and poster
+                presentations in the archived programme.
               </p>
-              <p>
-                <strong>Notification of Acceptance:</strong> 15 August 2026
-              </p>
-              <p>
-                <strong>Camera-ready Submission:</strong> 27 August 2026
-              </p>
-              <p>
-                <strong>Camera-ready Page Limit:</strong> 13 pages, plus
-                references and appendix
-              </p>
-              <p>
-                <strong>Workshop Date:</strong> 27 September 2026
-              </p>
-              {/* <p>
-                <strong>Proceedings Submission:</strong> TBC
-              </p> */}
+              <p><Link to="/schedule"><strong>View the 2026 programme</strong></Link></p>
             </div>
             <div className="info-card">
               <svg
@@ -303,34 +288,15 @@ export default function Home() {
                 <line x1="20" y1="8" x2="20" y2="14" />
                 <line x1="23" y1="11" x2="17" y2="11" />
               </svg>
-              <h2>Registration</h2>
+              <h2>Thank You</h2>
               <p>
-                All registered attendees of the MICCAI 2026 Conference are
-                welcome to participate in this workshop.
+                Thank you to every presenter, attendee, speaker, volunteer,
+                organiser and partner who made MIRASOL 2026 possible.
               </p>
               <p>
-                Please note that this workshop is a satellite event and an{" "}
-                <strong>additional registration fee</strong> is required to
-                attend MICCAI satellite events, including this workshop.
-              </p>
-              <p>
-                Registration details will be announced on the{" "}
-                <a
-                  href="https://conferences.miccai.org/2026/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  MICCAI 2026 website
-                </a>
-                .
-              </p>
-              <p>
-                <strong>Visa support letters</strong> are available through the
-                main conference once you have registered. Alternatively, please{" "}
-                <a href="mailto:info.camera.mri@gmail.com">
-                  contact the workshop organizers
-                </a>{" "}
-                directly.
+                Your research, ideas and conversations continue to strengthen
+                a more inclusive medical imaging community. We hope to see you
+                again next year!
               </p>
             </div>
           </div>
@@ -349,9 +315,9 @@ export default function Home() {
                 well as different career stages and gender representation. The
                 organizers are long time and new MICCAI members including
                 trainees from LMICs. The <strong>Next-Gen</strong> (trainees)
-                committee members will gain first-hand knowledge, experience,
-                and mentorship in conference organizations to continue running
-                MIRASOL in the future or organize other satellite events at
+                committee members gained first-hand knowledge, experience,
+                and mentorship in conference organization to help run future
+                MIRASOL workshops and other satellite events at
                 MICCAI.
               </p>
               <p>
